@@ -55,7 +55,6 @@ function formatRange(value, field) {
 }
 function buildFilterButtons() {
   const t = translations[language];
-  const expandedKey = $('#filter-sections').querySelector('.filter-section.expanded')?.dataset.section || 'brand';
   const brands = [...new Set(cars.map(car => car.brand))].sort((a,b) => a.localeCompare(b));
   const brandButtons = brands.map(brand => `<button class="filter-choice ${selectedBrands.has(brand)?'selected':''}" type="button" data-brand="${brand}">${brand}</button>`).join('');
   const sections = [{key:'brand',title:t.brand,choices:brandButtons}];
@@ -63,7 +62,7 @@ function buildFilterButtons() {
     const choices = quantileRanges(field).map((range,index) => `<button class="filter-choice range-choice ${sameRange(selectedRanges[field],range)? 'selected':''}" type="button" data-range="${field}" data-index="${index}"><span>${formatRange(range.min,field)}–${formatRange(range.max,field)} ${meta.unit}</span><small>${range.count} ${t.modelCount}</small></button>`).join('');
     sections.push({key:field,title:t[meta.title],choices});
   }
-  $('#filter-sections').innerHTML = sections.map(section => { const expanded=section.key===expandedKey; return `<section class="filter-section ${expanded?'expanded':''}" data-section="${section.key}"><button class="filter-toggle" type="button" aria-expanded="${expanded}"><span>${section.title}</span><span class="filter-summary">${section.key==='brand' ? (selectedBrands.size||'') : (selectedRanges[section.key] ? '1' : '')}</span><span class="filter-chevron">⌄</span></button><div class="filter-options">${section.key!=='brand'?`<button class="filter-choice any-choice ${selectedRanges[section.key]===null?'selected':''}" type="button" data-any="${section.key}">${t.filterAny}</button>`:''}${section.choices}</div></section>`; }).join('');
+  $('#filter-sections').innerHTML = sections.map((section,index) => { const expanded=section.key==='brand' ? true : index===1; return `<section class="filter-section ${expanded?'expanded':''}" data-section="${section.key}"><button class="filter-toggle" type="button" aria-expanded="${expanded}"><span>${section.title}</span><span class="filter-summary">${section.key==='brand' ? (selectedBrands.size||'') : (selectedRanges[section.key] ? '1' : '')}</span><span class="filter-chevron">⌄</span></button><div class="filter-options">${section.key!=='brand'?`<button class="filter-choice any-choice ${selectedRanges[section.key]===null?'selected':''}" type="button" data-any="${section.key}">${t.filterAny}</button>`:''}${section.choices}</div></section>`; }).join('');
 }
 function render() {
   translatePage();
@@ -107,12 +106,11 @@ document.addEventListener('click', e => {
 function showDetails(id) {
   const car = cars.find(item => identity(item) === id); if (!car) return;
   const image = carImages[id], t = translations[language];
-  $('#car-detail').innerHTML = `<div class="detail-copy"><div class="detail-image-frame">${image ? `<img src="${image.src}" alt="${car.year} ${car.brand} ${car.model}">` : `<span>${car.brand} ${car.model}</span>`}</div><div class="detail-info"><p class="year">${car.year}</p><p class="make">${car.brand}</p><h2>${car.model}</h2><p class="detail-price">${money(car.price_cr)}</p><div class="detail-specs"><span>${t.power}<b>${car.power_hp} HP</b></span><span>${t.torque}<b>${car.torque_lb_ft} LB-FT</b></span><span>${t.engine}<b>${car.engine_liters} L</b></span><span>${t.weight}<b>${car.weight_lbs ?? '—'} LBS</b></span></div><h3>${t.description}</h3><p class="detail-description">${descriptions[id] || ''}</p><button class="buy detail-buy" data-id="${encodeURIComponent(id)}">${purchases.has(id) ? t.remove : t.buy}</button></div></div>`;
+  $('#car-detail').innerHTML = `<div class="detail-copy"><div class="detail-info"><p class="year">${car.year}</p><p class="make">${car.brand}</p><h2>${car.model}</h2><p class="detail-price">${money(car.price_cr)}</p><div class="detail-specs"><span>${t.power}<b>${car.power_hp} HP</b></span><span>${t.torque}<b>${car.torque_lb_ft} LB-FT</b></span><span>${t.engine}<b>${car.engine_liters} L</b></span><span>${t.weight}<b>${car.weight_lbs ?? '—'} LBS</b></span></div><h3>${t.description}</h3><p class="detail-description">${descriptions[id] || ''}</p><button class="buy detail-buy" data-id="${encodeURIComponent(id)}">${purchases.has(id) ? t.remove : t.buy}</button></div><div class="detail-image-frame">${image ? `<img src="${image.src}" alt="${car.year} ${car.brand} ${car.model}">` : `<span>${car.brand} ${car.model}</span>`}</div></div>`;
   $('#car-dialog').showModal();
 }
 $('#car-dialog').addEventListener('click', event => { if (event.target === $('#car-dialog')) $('#car-dialog').close(); });
 document.querySelector('.dialog-close').addEventListener('click', () => $('#car-dialog').close());
-$('#car-dialog').addEventListener('close', () => render());
 $('#search').addEventListener('input', render); $('#sort').addEventListener('change', render);
 $('#clear-filters').addEventListener('click', () => { selectedBrands.clear(); Object.keys(selectedRanges).forEach(field=>selectedRanges[field]=null); $('#search').value = ''; buildFilterButtons(); render(); });
 $('#language-toggle').addEventListener('click', () => { language = language === 'en' ? 'pl' : 'en'; localStorage.setItem('fh1-language', language); load(); });
