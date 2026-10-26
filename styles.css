@@ -28,11 +28,14 @@ html[data-theme=dark] .noise{opacity:.018}
 .year{display:block}
 @media(max-width:700px){.filter-panel{margin:0 24px 22px}.range-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-filter{max-width:none}.make{font-size:15px}.model{font-size:22px}}
 
-.card-image-button{display:flex;width:100%;height:175px;align-items:center;justify-content:center;margin:13px 0 14px;padding:0;border:0;overflow:hidden;position:relative;background:linear-gradient(135deg,#dfe5eb,#f4f1e9 55%,#d1d9e2);cursor:pointer}
-.card-image-button:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 35px,#ffffff25 36px 37px)}
-.car-image{width:100%;height:100%;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 12px 8px #101b3542);transition:transform .3s ease}
+.card-image-button{display:flex;width:100%;height:175px;align-items:center;justify-content:center;margin:13px 0 14px;padding:0;border:0;overflow:hidden;position:relative;background:linear-gradient(135deg,#1d2940,#2c3a55 55%,#18243a);cursor:pointer}
+.card-image-button:before{content:"";position:absolute;inset:0;opacity:.33;background:radial-gradient(ellipse at 50% 110%,#ff704355,transparent 60%),repeating-linear-gradient(135deg,transparent 0 35px,#ffffff12 36px 37px)}
+.car-image{width:100%;height:100%;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 12px 8px #050914a8);transition:transform .3s ease}
 .card:hover .car-image{transform:scale(1.11)}
 .image-placeholder{font:800 18px 'Barlow Condensed';color:var(--muted);text-align:center;text-transform:uppercase}
+.car-image-button.scene-art{padding:0;background:#18243a}
+.car-image-button.scene-art .car-image{object-fit:cover;filter:none}
+.car-image-button.transparent-art{background:linear-gradient(135deg,#1d2940,#2c3a55 55%,#18243a)}
 .make{display:block;font:800 17px/1.05 'Barlow Condensed';letter-spacing:.1em;color:var(--ink);text-transform:uppercase;margin-top:4px}
 .model{font:600 17px/1.1 'Barlow Condensed';letter-spacing:.02em;color:var(--muted);text-transform:none;margin-top:3px}
 .card-head{align-items:flex-start}
@@ -45,11 +48,18 @@ html[data-theme=dark] .noise{opacity:.018}
 .dialog-close{position:absolute;right:16px;top:12px;z-index:2;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--ink);font-size:27px;cursor:pointer}
 .car-dialog[open]{display:block}
 .detail-copy{display:grid;grid-template-columns:40% 1fr;height:100%;min-width:0}
-.detail-image-button{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;margin:22px;padding:15px;border:0;background:linear-gradient(135deg,#dfe5eb,#f5f1e8 55%,#cbd5e1);cursor:zoom-in}
-.detail-image-button:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 40px,#ffffff26 41px 42px)}
-.detail-image-button img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 16px 10px #101b3555);transition:transform .3s ease}
+.detail-image-button{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;margin:22px;padding:15px;border:0;background:linear-gradient(135deg,#1d2940,#2c3a55 55%,#18243a);cursor:zoom-in}
+.detail-image-button:before{content:"";position:absolute;inset:0;opacity:.35;background:radial-gradient(ellipse at 50% 110%,#ff704355,transparent 60%),repeating-linear-gradient(135deg,transparent 0 40px,#ffffff12 41px 42px)}
+.detail-image-button img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 16px 10px #050914aa);transition:transform .3s ease}
+.detail-image-button.scene-art{padding:0;background:#18243a}
+.detail-image-button.scene-art img{object-fit:contain;filter:none}
+.detail-image-button.transparent-art{background:linear-gradient(135deg,#1d2940,#2c3a55 55%,#18243a)}
+.detail-image-button.scene-art{padding:0;background:#18243a;cursor:zoom-in}
+.detail-image-button.scene-art img{object-fit:contain;filter:none}
 .detail-image-button:hover img{transform:scale(1.1)}
 .detail-info{overflow:auto;padding:48px 38px 28px}
+.detail-info .wiki-source,.image-source{display:block;color:var(--muted);font-size:10px;margin-top:12px;text-decoration:none;letter-spacing:.06em}
+.image-source{overflow-wrap:anywhere}
 .detail-copy h2{font:800 clamp(38px,5vw,68px)/.95 'Barlow Condensed';text-transform:uppercase;margin:6px 0 10px}
 .detail-copy .make{font-size:21px}
 .detail-price{color:var(--orange);font:700 22px 'Barlow Condensed';margin:12px 0 23px}
@@ -60,10 +70,10 @@ html[data-theme=dark] .noise{opacity:.018}
 .detail-description{color:var(--muted);font-size:13px;line-height:1.7}
 .detail-buy{margin-top:14px}
 .wiki-source{display:block;color:var(--muted);font-size:10px;margin-top:18px;text-decoration:none;letter-spacing:.08em}
-html[data-theme=dark] .card-image-button{background:radial-gradient(ellipse at center,#263650 0%,transparent 72%)}
-html[data-theme=dark] .detail-visual{background:radial-gradient(ellipse at center,#263650 0%,transparent 68%),var(--cream)}
+html[data-theme=dark] .card-image-button,html[data-theme=dark] .detail-image-button{background:linear-gradient(135deg,#1d2940,#2c3a55 55%,#18243a)}
 @media(max-width:700px){.card-image-button{height:165px}.car-dialog{width:calc(100vw - 20px);height:calc(100dvh - 20px)}.car-dialog[open]{overflow:auto}.detail-copy{grid-template-columns:1fr;height:auto}.detail-image-button{height:220px;margin:16px 16px 0}.detail-info{padding:25px 24px}.dialog-close{position:fixed;right:20px;top:20px}}
 .image-lightbox{display:flex;position:relative;width:100%;height:100%;align-items:center;justify-content:center;flex-direction:column;background:#101b35;padding:40px}
 .image-lightbox img{max-width:100%;max-height:90%;object-fit:contain;filter:drop-shadow(0 14px 10px #0008);animation:rise .2s ease}
 .image-lightbox p{margin:12px 0 0;color:#fff;font:700 13px Inter}
 .lightbox-close{position:absolute;right:16px;top:14px;width:40px;height:40px;border:1px solid #ffffff55;border-radius:50%;background:#101b35;color:#fff;font-size:25px;cursor:pointer}
+.no-image .card-image-button{background:linear-gradient(135deg,#17233a,#283753 55%,#111b2e)}
