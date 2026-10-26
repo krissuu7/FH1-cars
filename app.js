@@ -2,8 +2,8 @@ const DATA_URL = 'fhcars.json';
 const DESCRIPTION_URLS = { en: 'fhcars_descriptions_en.json', pl: 'fhcars_descriptions_pl.json' };
 const STORAGE_KEY = 'fh1-garage-purchases';
 const translations = {
-  en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPower:'Power', sortYear:'Year', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
-  pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPower:'Moc', sortYear:'Rok', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
+  en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPowerAsc:'Power: low to high', sortPowerDesc:'Power: high to low', sortTorqueAsc:'Torque: low to high', sortTorqueDesc:'Torque: high to low', sortWeightAsc:'Weight: low to high', sortWeightDesc:'Weight: high to low', sortYearAsc:'Year: old to new', sortYearDesc:'Year: new to old', power:'POWER', torque:'TORQUE', weight:'WEIGHT', engine:'ENGINE', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
+  pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPowerAsc:'Moc: rosnąco', sortPowerDesc:'Moc: malejąco', sortTorqueAsc:'Moment: rosnąco', sortTorqueDesc:'Moment: malejąco', sortWeightAsc:'Waga: rosnąco', sortWeightDesc:'Waga: malejąco', sortYearAsc:'Rok: najstarsze', sortYearDesc:'Rok: najnowsze', power:'MOC', torque:'MOMENT', weight:'WAGA', engine:'SILNIK', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
 };
 let cars = [], descriptions = {}, language = localStorage.getItem('fh1-language') || 'en', activeTab = 'shop';
 let purchases = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
@@ -34,7 +34,8 @@ function render() {
   const sort = $('#sort').value;
   let visible = cars.filter(car => (activeTab === 'shop' ? !purchases.has(identity(car)) : purchases.has(identity(car))))
     .filter(car => `${car.brand} ${car.model} ${car.year}`.toLowerCase().includes(query));
-  visible.sort((a,b) => sort === 'priceAsc' ? a.price_cr-b.price_cr : sort === 'priceDesc' ? b.price_cr-a.price_cr : sort === 'powerDesc' ? b.power_hp-a.power_hp : sort === 'yearAsc' ? a.year-b.year : 0);
+  const sortValues = { priceAsc:['price_cr',1], priceDesc:['price_cr',-1], powerAsc:['power_hp',1], powerDesc:['power_hp',-1], torqueAsc:['torque_lb_ft',1], torqueDesc:['torque_lb_ft',-1], weightAsc:['weight_lbs',1], weightDesc:['weight_lbs',-1], yearAsc:['year',1], yearDesc:['year',-1] };
+  if (sortValues[sort]) { const [field, direction] = sortValues[sort]; visible.sort((a,b) => ((a[field] ?? Infinity) - (b[field] ?? Infinity)) * direction); }
   $('#car-grid').innerHTML = visible.map((car, i) => card(car, i)).join('');
   $('#empty-state').hidden = visible.length > 0;
   $('#shop-count').textContent = cars.filter(c => !purchases.has(identity(c))).length;
@@ -48,7 +49,7 @@ function render() {
 function card(car, i) {
   const id = identity(car), key = identity(car);
   const t = translations[language];
-  return `<article class="card" style="animation-delay:${Math.min(i,12)*25}ms"><div class="card-top"></div><div class="card-body"><div class="card-head"><div><span class="year">${car.year} · ${car.brand}</span><h2>${car.model}</h2></div><span class="price">${money(car.price_cr)}</span></div><p class="description">${descriptions[key] || ''}</p><div class="specs"><div class="spec"><span>POWER</span><strong>${car.power_hp} HP</strong></div><div class="spec"><span>TORQUE</span><strong>${car.torque_lb_ft} LB-FT</strong></div><div class="spec"><span>ENGINE</span><strong>${car.engine_liters} L</strong></div></div><div class="card-actions"><span class="owned">${purchases.has(id) ? t.owned : 'FORZA HORIZON 1'}</span><button class="buy" data-id="${encodeURIComponent(id)}">${purchases.has(id) ? t.remove : t.buy}</button></div></div></article>`;
+  return `<article class="card" style="animation-delay:${Math.min(i,12)*25}ms"><div class="card-top"></div><div class="card-body"><div class="card-head"><div><span class="year">${car.year} · ${car.brand}</span><h2>${car.model}</h2></div><span class="price">${money(car.price_cr)}</span></div><p class="description">${descriptions[key] || ''}</p><div class="specs"><div class="spec"><span>${t.power}</span><strong>${car.power_hp} HP</strong></div><div class="spec"><span>${t.torque}</span><strong>${car.torque_lb_ft} LB-FT</strong></div><div class="spec"><span>${t.weight}</span><strong>${car.weight_lbs ?? '—'} LBS</strong></div><div class="spec"><span>${t.engine}</span><strong>${car.engine_liters} L</strong></div></div><div class="card-actions"><span class="owned">${purchases.has(id) ? t.owned : 'FORZA HORIZON 1'}</span><button class="buy" data-id="${encodeURIComponent(id)}">${purchases.has(id) ? t.remove : t.buy}</button></div></div></article>`;
 }
 document.addEventListener('click', e => {
   const tab = e.target.closest('.tab'); if (tab) { activeTab = tab.dataset.tab; document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab)); render(); }
@@ -56,4 +57,8 @@ document.addEventListener('click', e => {
 });
 $('#search').addEventListener('input', render); $('#sort').addEventListener('change', render);
 $('#language-toggle').addEventListener('click', () => { language = language === 'en' ? 'pl' : 'en'; localStorage.setItem('fh1-language', language); load(); });
+const savedTheme = localStorage.getItem('fh1-theme') || 'light';
+document.documentElement.dataset.theme = savedTheme;
+$('#theme-icon').textContent = savedTheme === 'dark' ? '☀' : '☾';
+$('#theme-toggle').addEventListener('click', () => { const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = theme; localStorage.setItem('fh1-theme', theme); $('#theme-icon').textContent = theme === 'dark' ? '☀' : '☾'; });
 load();
