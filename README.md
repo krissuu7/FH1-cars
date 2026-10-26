@@ -14,4 +14,4 @@ Open `http://localhost:8000`.
 
 Purchase state is stored only in the browser under `localStorage`; the source JSON files remain unchanged.
 
-Car artwork is stored locally in `assets/cars/` and mapped in `car-images.json`. Images are matched to Forza Horizon 1-specific artwork on the [Forza Wiki car list](https://forza.fandom.com/wiki/Forza_Horizon/Cars); cars without a verified FH1 image use a placeholder instead of unrelated artwork. The detail view links to the image file and source list.
+Car artwork is stored locally in `assets/cars/` and mapped in `car-images.json`. Images are matched from the earliest verified Forza Horizon artwork available for each vehicle. Cars without a verified FH1 image use the earliest matching later-Horizon artwork available; vehicles with no verified artwork use a placeholder. Image and vehicle-page sources are recorded in the manifest.

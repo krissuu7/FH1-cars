@@ -7,7 +7,7 @@ const translations = {
   en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPowerAsc:'Power: low to high', sortPowerDesc:'Power: high to low', sortTorqueAsc:'Torque: low to high', sortTorqueDesc:'Torque: high to low', sortWeightAsc:'Weight: low to high', sortWeightDesc:'Weight: high to low', sortYearAsc:'Year: old to new', sortYearDesc:'Year: new to old', power:'POWER', torque:'TORQUE', weight:'WEIGHT', engine:'ENGINE', filters:'FILTERS', clearFilters:'Clear filters', brand:'MAKE', allMakes:'All makes', powerRange:'POWER (HP)', torqueRange:'TORQUE (LB-FT)', weightRange:'WEIGHT (LBS)', engineRange:'ENGINE (L)', learnMore:'LEARN MORE', close:'CLOSE', description:'DESCRIPTION', imageCredit:'Image: Forza Wiki', wikiLink:'CAR LIST SOURCE ↗', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
   pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPowerAsc:'Moc: rosnąco', sortPowerDesc:'Moc: malejąco', sortTorqueAsc:'Moment: rosnąco', sortTorqueDesc:'Moment: malejąco', sortWeightAsc:'Waga: rosnąco', sortWeightDesc:'Waga: malejąco', sortYearAsc:'Rok: najstarsze', sortYearDesc:'Rok: najnowsze', power:'MOC', torque:'MOMENT', weight:'WAGA', engine:'SILNIK', filters:'FILTRY', clearFilters:'Wyczyść filtry', brand:'MARKA', allMakes:'Wszystkie marki', powerRange:'MOC (KM)', torqueRange:'MOMENT (LB-FT)', weightRange:'WAGA (LBS)', engineRange:'SILNIK (L)', learnMore:'WIĘCEJ INFORMACJI', close:'ZAMKNIJ', description:'OPIS', imageCredit:'Zdjęcie: Forza Wiki', wikiLink:'ŹRÓDŁO LISTY AUT ↗', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
 };
-let cars = [], descriptions = {}, carImages = {}, language = localStorage.getItem('fh1-language') || 'en', activeTab = 'shop';
+let cars = [], descriptions = {}, carImages = {}, activeDetailsId = '', language = localStorage.getItem('fh1-language') || 'en', activeTab = 'shop';
 let purchases = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
 const $ = s => document.querySelector(s);
 const identity = car => `${car.brand}|${car.model}|${car.year}`;
@@ -20,9 +20,7 @@ async function load() {
     const descData = await descResponse.json();
     cars = database.cars;
     carImages = await imageResponse.json();
-    const verifiedImages = {};
-    for (const car of cars) { const id = identity(car); const entry = carImages[id]; if (entry && entry.file?.toLowerCase().startsWith('file:fh1_')) verifiedImages[id] = entry; }
-    carImages = verifiedImages;
+    carImages = await imageResponse.json();
     if ($('#brand-filter').options.length === 1) $('#brand-filter').insertAdjacentHTML('beforeend', [...new Set(cars.map(car => car.brand))].sort((a,b) => a.localeCompare(b)).map(brand => `<option value="${brand}">${brand}</option>`).join(''));
     descriptions = Object.fromEntries(descData.cars.map(d => [`${d.brand}|${d.model}|${d.year}`, d[`description_${language}`]]));
     render();
@@ -73,15 +71,22 @@ document.addEventListener('click', e => {
   const tab = e.target.closest('.tab'); if (tab) { activeTab = tab.dataset.tab; document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab)); render(); }
   const button = e.target.closest('.buy'); if (button) { const id = decodeURIComponent(button.dataset.id); purchases.has(id) ? purchases.delete(id) : purchases.add(id); localStorage.setItem(STORAGE_KEY, JSON.stringify([...purchases])); render(); if ($('#car-dialog').open) showDetails(id); }
   const detailsButton = e.target.closest('[data-details]'); if (detailsButton) showDetails(decodeURIComponent(detailsButton.dataset.details));
+  const fullImageButton = e.target.closest('[data-full-image]'); if (fullImageButton) showImage(decodeURIComponent(fullImageButton.dataset.fullImage));
 });
 function showDetails(id) {
   const car = cars.find(item => identity(item) === id); if (!car) return;
+  activeDetailsId = id;
   const image = carImages[id], t = translations[language];
-  $('#car-detail').innerHTML = `<div class="detail-visual">${image ? `<img src="${image.src}" alt="${car.year} ${car.brand} ${car.model}">` : `<span>${car.brand} ${car.model}</span>`}<a href="${image?.source || WIKI_SOURCE}" target="_blank" rel="noreferrer">${t.imageCredit}</a></div><div class="detail-copy"><p class="year">${car.year}</p><p class="make">${car.brand}</p><h2>${car.model}</h2><p class="detail-price">${money(car.price_cr)}</p><div class="detail-specs"><span>${t.power}<b>${car.power_hp} HP</b></span><span>${t.torque}<b>${car.torque_lb_ft} LB-FT</b></span><span>${t.engine}<b>${car.engine_liters} L</b></span><span>${t.weight}<b>${car.weight_lbs ?? '—'} LBS</b></span></div><h3>${t.description}</h3><p class="detail-description">${descriptions[id] || ''}</p><button class="buy detail-buy" data-id="${encodeURIComponent(id)}">${purchases.has(id) ? t.remove : t.buy}</button><a class="wiki-source" href="${WIKI_SOURCE}" target="_blank" rel="noreferrer">${t.wikiLink}</a></div>`;
+  $('#car-detail').innerHTML = `<div class="detail-copy"><button class="detail-image-button" data-full-image="${encodeURIComponent(id)}" aria-label="${t.learnMore}: ${car.brand} ${car.model}">${image ? `<img src="${image.src}" alt="${car.year} ${car.brand} ${car.model}">` : `<span>${car.brand} ${car.model}</span>`}</button><div class="detail-info"><p class="year">${car.year}</p><p class="make">${car.brand}</p><h2>${car.model}</h2><p class="detail-price">${money(car.price_cr)}</p><div class="detail-specs"><span>${t.power}<b>${car.power_hp} HP</b></span><span>${t.torque}<b>${car.torque_lb_ft} LB-FT</b></span><span>${t.engine}<b>${car.engine_liters} L</b></span><span>${t.weight}<b>${car.weight_lbs ?? '—'} LBS</b></span></div><h3>${t.description}</h3><p class="detail-description">${descriptions[id] || ''}</p><button class="buy detail-buy" data-id="${encodeURIComponent(id)}">${purchases.has(id) ? t.remove : t.buy}</button><a class="wiki-source" href="${WIKI_SOURCE}" target="_blank" rel="noreferrer">${t.wikiLink}</a></div></div>`;
   $('#car-dialog').showModal();
+}
+function showImage(id) {
+  const car = cars.find(item => identity(item) === id), image = carImages[id]; if (!car || !image) return;
+  $('#car-detail').innerHTML = `<div class="image-lightbox"><button class="lightbox-close" type="button" aria-label="Close">×</button><img src="${image.src}" alt="${car.year} ${car.brand} ${car.model}"><p>${car.year} ${car.brand} ${car.model}</p></div>`;
 }
 $('#car-dialog').addEventListener('click', event => { if (event.target === $('#car-dialog')) $('#car-dialog').close(); });
 document.querySelector('.dialog-close').addEventListener('click', () => $('#car-dialog').close());
+$('#car-dialog').addEventListener('click', event => { if (event.target.closest('.lightbox-close')) showDetails(activeDetailsId); });
 $('#car-dialog').addEventListener('close', () => render());
 $('#search').addEventListener('input', render); $('#sort').addEventListener('change', render);
 $('#brand-filter').addEventListener('change', render);
