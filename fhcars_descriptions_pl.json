@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "game": "Forza Horizon",
+  "language": "pl",
+  "description_style": "short_original_summaries",
+  "matching": "Match descriptions to cars using car_id, or brand + model + year.",
+  "source_notes": [
+    {
+      "url": "https://www.onlineracedriver.com/2012/08/03/forza-horizon-official-car-list/",
+      "purpose": "Cross-check of Forza Horizon vehicle roster and model naming."
+    },
+    {
+      "url": "https://www.supercheats.com/forza-horizon/walkthrough/the-horizon-car-list",
+      "purpose": "Cross-check of Forza Horizon car variants and game context."
+    }
+  ],
+  "cars": [
+    {
+      "car_id": "alfa-romeo-8c-competizione-2007",
+      "brand": "Alfa Romeo",
+      "model": "8C Competizione",
+      "year": 2007,
+      "description_pl": "Ręcznie stylizowane włoskie coupé z nadwoziem inspirowanym klasycznymi samochodami wyścigowymi. Wolnossące V8 i charakterystyczna sylwetka łączą elegancję z rasowym brzmieniem."
+    },
+    {
+      "car_id": "aston-martin-v12-zagato-villa-d-este-2011",
+      "brand": "Aston Martin",
+      "model": "V12 Zagato Villa d'Este",
+      "year": 2011,
+      "description_pl": "Limitowana wersja V12 Zagato, wyróżniająca się rzeźbionym nadwoziem zaprojektowanym przez Zagato. Łączy brytyjski luksus z mocnym silnikiem V12 i sportowym charakterem."
+    },
+    {
+      "car_id": "aston-martin-one-77-2010",
+      "brand": "Aston Martin",
+      "model": "One-77",
+      "year": 2010,
+      "description_pl": "Rzadki, ręcznie budowany supersamochód Astona Martina. Aluminiowe nadwozie, silnik V12 i eleganckie proporcje czynią go połączeniem luksusu oraz osiągów na poziomie egzotycznych hipersamochodów."
+    },
+    {
+      "car_id": "audi-tt-rs-coupe-2010",
+      "brand": "Audi",
+      "model": "TT RS Coupé",
+      "year": 2010,
+      "description_pl": "Kompaktowe sportowe coupé z turbodoładowanym pięciocylindrowym silnikiem. Napęd quattro i krótki rozstaw osi zapewniają mu skuteczne przyspieszenie oraz pewność na krętej drodze."
+    },
+    {
+      "car_id": "audi-rs-4-2006",
+      "brand": "Audi",
+      "model": "RS 4",
+      "year": 2006,
+      "description_pl": "Praktyczne, ale bardzo szybkie kombi lub sedan klasy średniej z wolnossącym V8. Napęd quattro i wysokoobrotowy silnik łączą codzienną użyteczność z charakterem sportowego auta."
+    },
+    {
+      "car_id": "audi-r8-gt-2011",
+      "brand": "Audi",
+      "model": "R8 GT",
+      "year": 2011,
+      "description_pl": "Odchudzona, bardziej skoncentrowana na osiągach odmiana R8. Centralnie umieszczone V10, napęd na cztery koła i precyzyjne prowadzenie tworzą rasowy supersamochód do szybkiej jazdy."
+    },
+    {
+      "car_id": "bentley-continental-gt-2012",
+      "brand": "Bentley",
+      "model": "Continental GT",
+      "year": 2012,
+      "description_pl": "Luksusowe grand tourer z napędem na cztery koła i potężnym silnikiem W12. Continental GT łączy komfort dalekich podróży z wysokimi osiągami i masywną, elegancką sylwetką."
+    },
+    {
+      "car_id": "bmw-m3-2008",
+      "brand": "BMW",
+      "model": "M3",
+      "year": 2008,
+      "description_pl": "Generacja E92 M3 stawia na wysokoobrotowe, wolnossące V8 i tylny napęd. To sportowe coupé stworzone z myślą o precyzyjnym prowadzeniu, mocnym brzmieniu i zaangażowaniu kierowcy."
+    },
+    {
+      "car_id": "bugatti-veyron-super-sport-2011",
+      "brand": "Bugatti",
+      "model": "Veyron Super Sport",
+      "year": 2011,
+      "description_pl": "Jedno z najszybszych aut swojej epoki, napędzane czterema turbosprężarkami i silnikiem W16. Wersja Super Sport podnosi osiągi Veyrona do ekstremalnego poziomu, zachowując napęd na cztery koła."
+    },
+    {
+      "car_id": "cadillac-cts-v-coupe-2011",
+      "brand": "Cadillac",
+      "model": "CTS-V Coupé",
+      "year": 2011,
+      "description_pl": "Amerykańskie sportowe coupé klasy premium z doładowanym V8. CTS-V łączy muskularny wygląd, mocne przyspieszenie i komfort, pokazując bardziej bezkompromisową stronę Cadillaca."
+    },
+    {
+      "car_id": "chevrolet-camaro-ss-coupe-1969",
+      "brand": "Chevrolet",
+      "model": "Camaro SS Coupé",
+      "year": 1969,
+      "description_pl": "Klasyczny amerykański muscle car z końca lat 60., z długą maską i potężnym V8. Camaro SS stawia na surowy charakter, mocny moment obrotowy i kultową sylwetkę epoki muscle carów."
+    },
+    {
+      "car_id": "chevrolet-corvette-stingray-427-1967",
+      "brand": "Chevrolet",
+      "model": "Corvette Stingray 427",
+      "year": 1967,
+      "description_pl": "Klasyczna Corvette C2 w mocnej odmianie 427 z dużym V8. Lekka jak na amerykańskie standardy konstrukcja i wyraziste proporcje sprawiają, że to ikona sportowych aut lat 60."
+    },
+    {
+      "car_id": "chevrolet-corvette-grand-sport-convertible-2010",
+      "brand": "Chevrolet",
+      "model": "Corvette Grand Sport Convertible",
+      "year": 2010,
+      "description_pl": "Otwarta Corvette Grand Sport łączy mocne V8 z nadwoziem typu roadster. Zapewnia osiągi sportowego samochodu i jazdę pod gołym niebem, zachowując charakterystyczny amerykański styl."
+    },
+    {
+      "car_id": "chevrolet-camaro-zl1-2012",
+      "brand": "Chevrolet",
+      "model": "Camaro ZL1",
+      "year": 2012,
+      "description_pl": "Nowoczesne Camaro o agresywnym wyglądzie i doładowanym V8. ZL1 oferuje potężne przyspieszenie, poprawione podwozie i osiągi przygotowane zarówno na drogę, jak i tor."
+    },
+    {
+      "car_id": "chevrolet-corvette-zr1-2009",
+      "brand": "Chevrolet",
+      "model": "Corvette ZR1",
+      "year": 2009,
+      "description_pl": "Topowa Corvette C6 z doładowanym V8, zaprojektowana z myślą o bardzo wysokich osiągach. ZR1 łączy stosunkowo lekką konstrukcję z ogromną mocą i skuteczną aerodynamiką."
+    },
+    {
+      "car_id": "dodge-charger-srt-8-2012",
+      "brand": "Dodge",
+      "model": "Charger SRT-8",
+      "year": 2012,
+      "description_pl": "Duży sedan z napędem na tył i mocnym V8, który łączy przestronne wnętrze z charakterem amerykańskiego muscle cara. SRT-8 jest szybki na prostej, ale zachowuje praktyczność czterodrzwiowego auta."
+    },
+    {
+      "car_id": "dodge-challenger-srt-8-392-2012",
+      "brand": "Dodge",
+      "model": "Challenger SRT-8 392",
+      "year": 2012,
+      "description_pl": "Muscle car w odmianie SRT-8 392, napędzany dużym V8 HEMI. Długa maska, szerokie nadwozie i mocny moment obrotowy podkreślają klasyczny amerykański charakter w nowoczesnym wydaniu."
+    },
+    {
+      "car_id": "ferrari-california-2009",
+      "brand": "Ferrari",
+      "model": "California",
+      "year": 2009,
+      "description_pl": "California to eleganckie Ferrari z silnikiem V8 z przodu i składaną twardą kopułą. Łączy sportowe osiągi z wygodą codziennej jazdy i możliwością podróżowania z otwartym dachem."
+    },
+    {
+      "car_id": "ferrari-f40-1987",
+      "brand": "Ferrari",
+      "model": "F40",
+      "year": 1987,
+      "description_pl": "Legendarny supersamochód z końca lat 80., z podwójnie turbodoładowanym V8 i minimalistycznym podejściem do komfortu. F40 jest lekka, surowa i skupiona przede wszystkim na wrażeniach z jazdy."
+    },
+    {
+      "car_id": "ferrari-f50-1995",
+      "brand": "Ferrari",
+      "model": "F50",
+      "year": 1995,
+      "description_pl": "F50 powstało jako drogowy samochód inspirowany technologią Formuły 1. Wolnossące V12, centralny silnik i zdejmowany dach nadają mu wyjątkowo bezpośredni, wyścigowy charakter."
+    },
+    {
+      "car_id": "ferrari-458-spider-2011",
+      "brand": "Ferrari",
+      "model": "458 Spider",
+      "year": 2011,
+      "description_pl": "458 Spider łączy wysokoobrotowe V8 z otwieranym dachem i nowoczesną aerodynamiką. To efektowne włoskie sportowe auto, które stawia na szybkość, precyzję i emocjonujące brzmienie silnika."
+    },
+    {
+      "car_id": "ferrari-430-scuderia-2007",
+      "brand": "Ferrari",
+      "model": "430 Scuderia",
+      "year": 2007,
+      "description_pl": "430 Scuderia to lżejsza, bardziej torowa odmiana F430 opracowana z naciskiem na osiągi. Szybka skrzynia, wolnossące V8 i ograniczona masa zapewniają jej bezpośredni, wyścigowy charakter."
+    },
+    {
+      "car_id": "ferrari-enzo-ferrari-2002",
+      "brand": "Ferrari",
+      "model": "Enzo Ferrari",
+      "year": 2002,
+      "description_pl": "Enzo Ferrari to limitowany supersamochód nazwany na cześć założyciela marki. Karbonowa konstrukcja, wolnossące V12 i rozwiązania inspirowane Formułą 1 stawiają go wśród najważniejszych Ferrari początku XXI wieku."
+    },
+    {
+      "car_id": "ford-f-150-svt-raptor-2011",
+      "brand": "Ford",
+      "model": "F-150 SVT Raptor",
+      "year": 2011,
+      "description_pl": "Raptor to terenowy pickup przygotowany do szybkiej jazdy po bezdrożach. Szeroki rozstaw kół, zwiększony prześwit i mocne V8 pomagają mu pokonywać trudny teren z dużą prędkością."
+    },
+    {
+      "car_id": "ford-gt-2005",
+      "brand": "Ford",
+      "model": "GT",
+      "year": 2005,
+      "description_pl": "Ford GT z 2005 roku nawiązuje do zwycięskiego GT40 z Le Mans. Centralnie umieszczone doładowane V8, niska sylwetka i retro-nowoczesne nadwozie tworzą wyjątkowe połączenie historii i osiągów."
+    },
+    {
+      "car_id": "ford-shelby-gt500-2013",
+      "brand": "Ford",
+      "model": "Shelby GT500",
+      "year": 2013,
+      "description_pl": "Shelby GT500 to mocna odmiana Mustanga z doładowanym V8. Łączy klasyczny wygląd muscle cara z nowoczesną trakcją i ogromnym zapasem mocy, szczególnie odczuwalnym przy przyspieszaniu."
+    },
+    {
+      "car_id": "hennessey-venom-gt-2012",
+      "brand": "Hennessey",
+      "model": "Venom GT",
+      "year": 2012,
+      "description_pl": "Venom GT to ekstremalny, niskoseryjny supersamochód zbudowany z myślą o minimalnej masie i maksymalnej prędkości. Doładowane V8 oraz lekka konstrukcja dają mu osiągi z ligi hipersamochodów."
+    },
+    {
+      "car_id": "honda-integra-type-r-2002",
+      "brand": "Honda",
+      "model": "Integra Type R",
+      "year": 2002,
+      "description_pl": "Integra Type R to lekki samochód sportowy Hondy, ceniony za precyzyjne podwozie i wysokoobrotowy silnik. Zamiast ogromnej mocy oferuje niską masę, responsywność i świetne wyczucie prowadzenia."
+    },
+    {
+      "car_id": "hyundai-genesis-coupe-3-8-track-2013",
+      "brand": "Hyundai",
+      "model": "Genesis Coupe 3.8 Track",
+      "year": 2013,
+      "description_pl": "Genesis Coupé 3.8 Track to tylnonapędowe coupé z wolnossącym V6. Wersja Track stawia na bardziej sportowe prowadzenie, a układ napędowy i proporcje nadają autu charakter klasycznego sportowego coupé."
+    },
+    {
+      "car_id": "infiniti-ipl-g-coupe-2012",
+      "brand": "Infiniti",
+      "model": "IPL G Coupe",
+      "year": 2012,
+      "description_pl": "IPL G Coupé to usportowiona wersja luksusowego coupé Infiniti. Wolnossące V6, tylny napęd i dopracowane zawieszenie łączą komfort z bardziej dynamicznym charakterem."
+    },
+    {
+      "car_id": "jaguar-xkr-s-2012",
+      "brand": "Jaguar",
+      "model": "XKR-S",
+      "year": 2012,
+      "description_pl": "XKR-S to najmocniej sportowo nastawiona odmiana luksusowego coupé Jaguara z tej generacji. Doładowane V8, muskularne nadwozie i dopracowane podwozie łączą brytyjską elegancję z wysokimi osiągami."
+    },
+    {
+      "car_id": "jeep-grand-cherokee-srt8-2012",
+      "brand": "Jeep",
+      "model": "Grand Cherokee SRT8",
+      "year": 2012,
+      "description_pl": "Grand Cherokee SRT8 to sportowy SUV z dużym wolnossącym V8. Łączy przestronne nadwozie i wygodę SUV-a z mocnym przyspieszeniem oraz wyraźnie bardziej dynamicznym zawieszeniem."
+    },
+    {
+      "car_id": "koenigsegg-ccxr-edition-2009",
+      "brand": "Koenigsegg",
+      "model": "CCXR Edition",
+      "year": 2009,
+      "description_pl": "CCXR Edition to rzadki szwedzki hipersamochód z doładowanym V8 przystosowanym do paliwa E85. Lekka konstrukcja i ponad tysiąc koni mechanicznych stawiają go wśród najbardziej ekstremalnych aut swojej epoki."
+    },
+    {
+      "car_id": "lamborghini-countach-lp5000-qv-1988",
+      "brand": "Lamborghini",
+      "model": "Countach LP5000 QV",
+      "year": 1988,
+      "description_pl": "Countach to jedna z ikon włoskich supersamochodów lat 80. Kanciaste nadwozie, charakterystyczne drzwi i wysokoobrotowe V12 uczyniły z niego symbol odważnego, futurystycznego designu."
+    },
+    {
+      "car_id": "lamborghini-diablo-sv-1997",
+      "brand": "Lamborghini",
+      "model": "Diablo SV",
+      "year": 1997,
+      "description_pl": "Diablo SV to bardziej skoncentrowana na osiągach wersja klasycznego Lamborghini z V12. Tylny napęd i agresywna stylistyka nadają mu surowy charakter, typowy dla supersamochodów lat 90."
+    },
+    {
+      "car_id": "lamborghini-reventon-roadster-2009",
+      "brand": "Lamborghini",
+      "model": "Reventón Roadster",
+      "year": 2009,
+      "description_pl": "Reventón Roadster wyróżnia się kanciastym, inspirowanym samolotami bojowymi nadwoziem. Wolnossące V12 i otwarta kabina łączą spektakularny wygląd z brutalnymi osiągami."
+    },
+    {
+      "car_id": "lamborghini-gallardo-lp570-4-superleggera-2011",
+      "brand": "Lamborghini",
+      "model": "Gallardo LP570-4 Superleggera",
+      "year": 2011,
+      "description_pl": "Gallardo Superleggera to lżejsza i bardziej torowa odmiana Gallardo. Napęd na cztery koła, wysokoobrotowe V10 i ograniczenie masy zapewniają jej szybkie reakcje oraz mocne przyspieszenie."
+    },
+    {
+      "car_id": "lamborghini-murcielago-lp-670-4-sv-2010",
+      "brand": "Lamborghini",
+      "model": "Murciélago LP 670-4 SV",
+      "year": 2010,
+      "description_pl": "Murciélago LP 670-4 SV to ekstremalna, odchudzona wersja flagowego Lamborghini z V12. Napęd na cztery koła, dodatkowa moc i agresywna aerodynamika podkreślają jej torowe ambicje."
+    },
+    {
+      "car_id": "lamborghini-aventador-lp700-4-2012",
+      "brand": "Lamborghini",
+      "model": "Aventador LP700-4",
+      "year": 2012,
+      "description_pl": "Aventador LP700-4 wprowadził nowoczesną konstrukcję z włókna węglowego i nowe wolnossące V12. Napęd na cztery koła oraz futurystyczne nadwozie czynią go efektownym flagowym modelem Lamborghini."
+    },
+    {
+      "car_id": "land-rover-range-rover-supercharged-2012",
+      "brand": "Land Rover",
+      "model": "Range Rover Supercharged",
+      "year": 2012,
+      "description_pl": "Range Rover Supercharged łączy luksusowe wnętrze i zdolności terenowe z doładowanym V8. To duży, komfortowy SUV, który potrafi przyspieszać z zaskakującą energią."
+    },
+    {
+      "car_id": "lexus-is-f-2009",
+      "brand": "Lexus",
+      "model": "IS F",
+      "year": 2009,
+      "description_pl": "IS F to sportowy sedan Lexusa z wolnossącym V8 i tylnym napędem. Łączy japońską solidność oraz komfort z osiągami i brzmieniem, które wyróżniają go na tle zwykłych sedanów."
+    },
+    {
+      "car_id": "lexus-lfa-2010",
+      "brand": "Lexus",
+      "model": "LFA",
+      "year": 2010,
+      "description_pl": "LFA to limitowany supersamochód Lexusa z wysokoobrotowym V10 i lekką konstrukcją z włókna węglowego. Jest znany z niezwykłego brzmienia silnika, precyzji prowadzenia i starannego wykonania."
+    },
+    {
+      "car_id": "lotus-exige-cup-240-2006",
+      "brand": "Lotus",
+      "model": "Exige Cup 240",
+      "year": 2006,
+      "description_pl": "Exige Cup 240 to niewielki, bardzo lekki samochód sportowy o wyścigowym nastawieniu. Centralny silnik, bezpośredni układ kierowniczy i minimalna masa stawiają prowadzenie ponad komfortem."
+    },
+    {
+      "car_id": "maserati-granturismo-s-2010",
+      "brand": "Maserati",
+      "model": "GranTurismo S",
+      "year": 2010,
+      "description_pl": "GranTurismo S to eleganckie włoskie grand tourer z wolnossącym V8. Łączy dźwięk silnika i sportowe osiągi z komfortem podróżowania oraz charakterystyczną stylistyką Maserati."
+    },
+    {
+      "car_id": "mazda-mx-5-miata-1994",
+      "brand": "Mazda",
+      "model": "MX-5 Miata",
+      "year": 1994,
+      "description_pl": "MX-5 pierwszej generacji to lekki roadster z tylnym napędem, stworzony dla czystej przyjemności prowadzenia. Niewielka masa, prosta konstrukcja i zwinne podwozie sprawiają, że nie potrzebuje ogromnej mocy."
+    },
+    {
+      "car_id": "mclaren-mp4-12c-2011",
+      "brand": "McLaren",
+      "model": "MP4-12C",
+      "year": 2011,
+      "description_pl": "MP4-12C był nowoczesnym powrotem McLarena do drogowych supersamochodów. Lekka konstrukcja, centralnie umieszczone podwójnie turbodoładowane V8 i zaawansowane podwozie zapewniają mu imponujące osiągi."
+    },
+    {
+      "car_id": "mercedes-benz-ml-63-amg-2009",
+      "brand": "Mercedes-Benz",
+      "model": "ML 63 AMG",
+      "year": 2009,
+      "description_pl": "ML 63 AMG to luksusowy SUV z wolnossącym V8 AMG. Łączy wysoką pozycję za kierownicą i praktyczność z gwałtownym przyspieszeniem oraz rasowym dźwiękiem dużego silnika."
+    },
+    {
+      "car_id": "mercedes-benz-s-65-amg-2012",
+      "brand": "Mercedes-Benz",
+      "model": "S 65 AMG",
+      "year": 2012,
+      "description_pl": "S 65 AMG to luksusowa limuzyna z ręcznie składanym, podwójnie turbodoładowanym V12. Jej charakter opiera się na ogromnym momencie obrotowym, wyciszeniu kabiny i przyspieszeniu bez rezygnacji z komfortu."
+    },
+    {
+      "car_id": "mercedes-benz-sl-65-amg-black-series-2009",
+      "brand": "Mercedes-Benz",
+      "model": "SL 65 AMG Black Series",
+      "year": 2009,
+      "description_pl": "SL 65 AMG Black Series to radykalna, limitowana odmiana SL z potężnym biturbo V12. Szersze nadwozie, agresywna aerodynamika i nastawy ukierunkowane na osiągi odróżniają ją od luksusowego roadstera."
+    },
+    {
+      "car_id": "mercedes-benz-c-63-amg-black-series-2012",
+      "brand": "Mercedes-Benz",
+      "model": "C 63 AMG Black Series",
+      "year": 2012,
+      "description_pl": "C 63 AMG Black Series to torowo zorientowana odmiana kompaktowego sedana/coupé AMG z wolnossącym V8. Poszerzone nadwozie, mocne hamulce i bardziej bezpośrednie podwozie nadają mu bezkompromisowy charakter."
+    },
+    {
+      "car_id": "mini-cooper-s-2011",
+      "brand": "MINI",
+      "model": "Cooper S",
+      "year": 2011,
+      "description_pl": "Cooper S łączy niewielkie wymiary MINI z doładowanym silnikiem i zwinnością w zakrętach. Krótki rozstaw osi oraz szybkie reakcje sprawiają, że auto świetnie pasuje do dynamicznej jazdy po krętych drogach."
+    },
+    {
+      "car_id": "nissan-gt-r-black-edition-2012",
+      "brand": "Nissan",
+      "model": "GT-R Black Edition",
+      "year": 2012,
+      "description_pl": "GT-R Black Edition to zaawansowane technicznie coupé z podwójnie turbodoładowanym V6 i napędem na cztery koła. Skuteczna trakcja i szybki układ napędowy pozwalają mu przenosić dużą moc na asfalt."
+    },
+    {
+      "car_id": "pagani-zonda-r-2010",
+      "brand": "Pagani",
+      "model": "Zonda R",
+      "year": 2010,
+      "description_pl": "Zonda R to torowy hipersamochód, który nie został stworzony do zwykłej jazdy po drogach publicznych. Lekka konstrukcja, wolnossące V12 i rozbudowana aerodynamika podporządkowują wszystko osiągom na torze."
+    },
+    {
+      "car_id": "pontiac-firebird-trans-am-1977",
+      "brand": "Pontiac",
+      "model": "Firebird Trans Am",
+      "year": 1977,
+      "description_pl": "Firebird Trans Am z 1977 roku to klasyczny amerykański muscle car o charakterystycznym przodzie i długiej masce. Duży silnik V8 i wyrazista stylistyka uczyniły go rozpoznawalnym symbolem epoki."
+    },
+    {
+      "car_id": "ruf-rgt-8-2011",
+      "brand": "RUF",
+      "model": "RGT-8",
+      "year": 2011,
+      "description_pl": "RGT-8 to wyjątkowy model RUF bazujący na architekturze Porsche 911, ale wyposażony w opracowane przez RUF wolnossące V8. Łączy rozpoznawalną sylwetkę 911 z nietypowym układem napędowym i mocnym, liniowym oddawaniem mocy."
+    },
+    {
+      "car_id": "saleen-s7-2004",
+      "brand": "Saleen",
+      "model": "S7",
+      "year": 2004,
+      "description_pl": "S7 to ręcznie budowany amerykański supersamochód z centralnie umieszczonym V8. Niska masa, aerodynamiczne nadwozie i późniejsze doładowanie silnika zapewniają mu osiągi godne egzotycznych konstrukcji."
+    },
+    {
+      "car_id": "scion-fr-s-2013",
+      "brand": "Scion",
+      "model": "FR-S",
+      "year": 2013,
+      "description_pl": "FR-S to lekkie coupé z tylnym napędem, opracowane z naciskiem na równowagę i prowadzenie. Wolnossący bokser i niska pozycja za kierownicą zachęcają do płynnej, precyzyjnej jazdy."
+    },
+    {
+      "car_id": "toyota-supra-rz-1998",
+      "brand": "Toyota",
+      "model": "Supra RZ",
+      "year": 1998,
+      "description_pl": "Supra RZ generacji A80 stała się ikoną dzięki rzędowemu, turbodoładowanemu silnikowi 2JZ-GTE i dużemu potencjałowi tuningu. Długi przód, tylny napęd i mocna baza techniczna czynią ją legendą japońskich sportowych aut."
+    },
+    {
+      "car_id": "tvr-sagaris-2005",
+      "brand": "TVR",
+      "model": "Sagaris",
+      "year": 2005,
+      "description_pl": "Sagaris to lekkie, bezkompromisowe brytyjskie coupé z wolnossącym rzędowym sześciocylindrowym silnikiem. Charakterystyczne detale nadwozia i bezpośrednie prowadzenie podkreślają jego surowy, analogowy charakter."
+    },
+    {
+      "car_id": "viper-srt-viper-gts-2013",
+      "brand": "Viper",
+      "model": "SRT Viper GTS",
+      "year": 2013,
+      "description_pl": "SRT Viper GTS to amerykańskie sportowe coupé z ogromnym wolnossącym V10. Tylny napęd, szeroka sylwetka i wysoki moment obrotowy wymagają szacunku, ale oferują intensywne, klasycznie mechaniczne wrażenia."
+    },
+    {
+      "car_id": "viper-srt10-acr-x-2010",
+      "brand": "Viper",
+      "model": "SRT10 ACR-X",
+      "year": 2010,
+      "description_pl": "ACR-X to torowa odmiana Vipera przygotowana do wyścigów, z naciskiem na aerodynamikę, przyczepność i redukcję zbędnej masy. Potężne V10 i bezkompromisowe nastawy czynią go autem stworzonym przede wszystkim do jazdy po torze."
+    }
+  ]
+}

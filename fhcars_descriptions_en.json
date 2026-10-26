@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "game": "Forza Horizon",
+  "language": "en",
+  "description_style": "short_original_summaries",
+  "matching": "Match descriptions to cars using car_id, or brand + model + year.",
+  "cars": [
+    {
+      "car_id": "alfa-romeo-8c-competizione-2007",
+      "brand": "Alfa Romeo",
+      "model": "8C Competizione",
+      "year": 2007,
+      "description_en": "An Italian coupé with hand-crafted styling inspired by classic racing cars. Its naturally aspirated V8 and distinctive silhouette combine elegance with a truly sporting sound."
+    },
+    {
+      "car_id": "aston-martin-v12-zagato-villa-d-este-2011",
+      "brand": "Aston Martin",
+      "model": "V12 Zagato Villa d'Este",
+      "year": 2011,
+      "description_en": "A limited edition of the V12 Zagato, distinguished by sculpted bodywork designed by Zagato. It combines British luxury with a powerful V12 engine and a sporty character."
+    },
+    {
+      "car_id": "aston-martin-one-77-2010",
+      "brand": "Aston Martin",
+      "model": "One-77",
+      "year": 2010,
+      "description_en": "A rare, hand-built Aston Martin supercar. Its aluminium body, V12 engine and elegant proportions make it a blend of luxury and performance worthy of exotic supercars."
+    },
+    {
+      "car_id": "audi-tt-rs-coupe-2010",
+      "brand": "Audi",
+      "model": "TT RS Coupé",
+      "year": 2010,
+      "description_en": "A compact sports coupé powered by a turbocharged five-cylinder engine. Quattro all-wheel drive and a short wheelbase deliver strong acceleration and confidence on winding roads."
+    },
+    {
+      "car_id": "audi-rs-4-2006",
+      "brand": "Audi",
+      "model": "RS 4",
+      "year": 2006,
+      "description_en": "A practical yet very fast mid-size estate or saloon powered by a naturally aspirated V8. Quattro all-wheel drive and a high-revving engine combine everyday usability with the character of a sports car."
+    },
+    {
+      "car_id": "audi-r8-gt-2011",
+      "brand": "Audi",
+      "model": "R8 GT",
+      "year": 2011,
+      "description_en": "A lighter, more performance-focused version of the R8. Its mid-mounted V10, all-wheel drive and precise handling make it a thoroughbred supercar built for fast driving."
+    },
+    {
+      "car_id": "bentley-continental-gt-2012",
+      "brand": "Bentley",
+      "model": "Continental GT",
+      "year": 2012,
+      "description_en": "A luxury grand tourer with all-wheel drive and a powerful W12 engine. The Continental GT combines long-distance comfort with strong performance and a substantial, elegant silhouette."
+    },
+    {
+      "car_id": "bmw-m3-2008",
+      "brand": "BMW",
+      "model": "M3",
+      "year": 2008,
+      "description_en": "The E92-generation M3 features a high-revving, naturally aspirated V8 and rear-wheel drive. This sports coupé is built around precise handling, a stirring engine note and an engaging driving experience."
+    },
+    {
+      "car_id": "bugatti-veyron-super-sport-2011",
+      "brand": "Bugatti",
+      "model": "Veyron Super Sport",
+      "year": 2011,
+      "description_en": "One of the fastest cars of its era, powered by a quad-turbocharged W16 engine. The Super Sport pushes the Veyron's performance to extreme levels while retaining all-wheel drive."
+    },
+    {
+      "car_id": "cadillac-cts-v-coupe-2011",
+      "brand": "Cadillac",
+      "model": "CTS-V Coupé",
+      "year": 2011,
+      "description_en": "An American premium sports coupé with a supercharged V8. The CTS-V combines muscular styling, strong acceleration and comfort, showcasing Cadillac's more hard-edged side."
+    },
+    {
+      "car_id": "chevrolet-camaro-ss-coupe-1969",
+      "brand": "Chevrolet",
+      "model": "Camaro SS Coupé",
+      "year": 1969,
+      "description_en": "A classic American muscle car from the late 1960s, with a long bonnet and a powerful V8. The Camaro SS delivers raw character, strong torque and the iconic styling of the muscle-car era."
+    },
+    {
+      "car_id": "chevrolet-corvette-stingray-427-1967",
+      "brand": "Chevrolet",
+      "model": "Corvette Stingray 427",
+      "year": 1967,
+      "description_en": "A classic C2 Corvette in its powerful 427 form, featuring a large V8. Relatively light by American standards, its striking proportions make it an icon of 1960s sports cars."
+    },
+    {
+      "car_id": "chevrolet-corvette-grand-sport-convertible-2010",
+      "brand": "Chevrolet",
+      "model": "Corvette Grand Sport Convertible",
+      "year": 2010,
+      "description_en": "The open-top Corvette Grand Sport pairs a powerful V8 with roadster bodywork. It offers sports-car performance and open-air motoring while retaining unmistakable American style."
+    },
+    {
+      "car_id": "chevrolet-camaro-zl1-2012",
+      "brand": "Chevrolet",
+      "model": "Camaro ZL1",
+      "year": 2012,
+      "description_en": "A modern Camaro with aggressive styling and a supercharged V8. The ZL1 delivers immense acceleration, an upgraded chassis and performance suited to both road and track."
+    },
+    {
+      "car_id": "chevrolet-corvette-zr1-2009",
+      "brand": "Chevrolet",
+      "model": "Corvette ZR1",
+      "year": 2009,
+      "description_en": "The top-tier C6 Corvette, powered by a supercharged V8 and designed for exceptional performance. The ZR1 combines a relatively lightweight construction with huge power and effective aerodynamics."
+    },
+    {
+      "car_id": "dodge-charger-srt-8-2012",
+      "brand": "Dodge",
+      "model": "Charger SRT-8",
+      "year": 2012,
+      "description_en": "A large rear-wheel-drive saloon with a powerful V8, combining a spacious cabin with American muscle-car character. The SRT-8 is quick in a straight line while retaining the practicality of a four-door car."
+    },
+    {
+      "car_id": "dodge-challenger-srt-8-392-2012",
+      "brand": "Dodge",
+      "model": "Challenger SRT-8 392",
+      "year": 2012,
+      "description_en": "An SRT-8 392 muscle car powered by a large HEMI V8. Its long bonnet, wide body and strong torque emphasise classic American character in a modern package."
+    },
+    {
+      "car_id": "ferrari-california-2009",
+      "brand": "Ferrari",
+      "model": "California",
+      "year": 2009,
+      "description_en": "The California is an elegant Ferrari with a front-mounted V8 and a retractable hardtop. It combines sporting performance with everyday comfort and the option of open-top driving."
+    },
+    {
+      "car_id": "ferrari-f40-1987",
+      "brand": "Ferrari",
+      "model": "F40",
+      "year": 1987,
+      "description_en": "A legendary supercar from the late 1980s, powered by a twin-turbocharged V8 and built with minimal regard for comfort. The F40 is light, raw and focused above all on the driving experience."
+    },
+    {
+      "car_id": "ferrari-f50-1995",
+      "brand": "Ferrari",
+      "model": "F50",
+      "year": 1995,
+      "description_en": "The F50 was created as a road car inspired by Formula 1 technology. Its naturally aspirated V12, mid-engine layout and removable roof give it an unusually direct, race-bred character."
+    },
+    {
+      "car_id": "ferrari-458-spider-2011",
+      "brand": "Ferrari",
+      "model": "458 Spider",
+      "year": 2011,
+      "description_en": "The 458 Spider combines a high-revving V8 with a retractable roof and modern aerodynamics. This striking Italian sports car focuses on speed, precision and an exhilarating engine note."
+    },
+    {
+      "car_id": "ferrari-430-scuderia-2007",
+      "brand": "Ferrari",
+      "model": "430 Scuderia",
+      "year": 2007,
+      "description_en": "The 430 Scuderia is a lighter, more track-focused version of the F430. A quick gearbox, naturally aspirated V8 and reduced weight give it a direct, race-inspired character."
+    },
+    {
+      "car_id": "ferrari-enzo-ferrari-2002",
+      "brand": "Ferrari",
+      "model": "Enzo Ferrari",
+      "year": 2002,
+      "description_en": "The Enzo Ferrari is a limited-production supercar named after the company's founder. Its carbon-fibre construction, naturally aspirated V12 and Formula 1-inspired engineering make it one of the most significant Ferraris of the early 2000s."
+    },
+    {
+      "car_id": "ford-f-150-svt-raptor-2011",
+      "brand": "Ford",
+      "model": "F-150 SVT Raptor",
+      "year": 2011,
+      "description_en": "The Raptor is a pickup engineered for fast off-road driving. Its wide track, increased ground clearance and powerful V8 help it tackle rough terrain at speed."
+    },
+    {
+      "car_id": "ford-gt-2005",
+      "brand": "Ford",
+      "model": "GT",
+      "year": 2005,
+      "description_en": "The 2005 Ford GT pays tribute to the Le Mans-winning GT40. A mid-mounted supercharged V8, low silhouette and retro-modern bodywork create a distinctive blend of heritage and performance."
+    },
+    {
+      "car_id": "ford-shelby-gt500-2013",
+      "brand": "Ford",
+      "model": "Shelby GT500",
+      "year": 2013,
+      "description_en": "The Shelby GT500 is a high-performance Mustang with a supercharged V8. It combines classic muscle-car styling with modern traction and a huge reserve of power, especially under acceleration."
+    },
+    {
+      "car_id": "hennessey-venom-gt-2012",
+      "brand": "Hennessey",
+      "model": "Venom GT",
+      "year": 2012,
+      "description_en": "The Venom GT is an extreme, low-volume supercar designed around minimal weight and maximum speed. Its supercharged V8 and lightweight construction deliver hypercar-level performance."
+    },
+    {
+      "car_id": "honda-integra-type-r-2002",
+      "brand": "Honda",
+      "model": "Integra Type R",
+      "year": 2002,
+      "description_en": "The Integra Type R is a lightweight Honda sports car prized for its precise chassis and high-revving engine. Rather than relying on huge power, it offers low weight, responsiveness and excellent driver feedback."
+    },
+    {
+      "car_id": "hyundai-genesis-coupe-3-8-track-2013",
+      "brand": "Hyundai",
+      "model": "Genesis Coupe 3.8 Track",
+      "year": 2013,
+      "description_en": "The Genesis Coupé 3.8 Track is a rear-wheel-drive coupé with a naturally aspirated V6. The Track version focuses on sportier handling, while its powertrain and proportions give it the character of a classic sports coupé."
+    },
+    {
+      "car_id": "infiniti-ipl-g-coupe-2012",
+      "brand": "Infiniti",
+      "model": "IPL G Coupe",
+      "year": 2012,
+      "description_en": "The IPL G Coupé is a sportier version of Infiniti's luxury coupé. A naturally aspirated V6, rear-wheel drive and tuned suspension combine comfort with a more dynamic character."
+    },
+    {
+      "car_id": "jaguar-xkr-s-2012",
+      "brand": "Jaguar",
+      "model": "XKR-S",
+      "year": 2012,
+      "description_en": "The XKR-S is the most performance-focused version of this generation of Jaguar's luxury coupé. A supercharged V8, muscular bodywork and tuned chassis combine British elegance with serious performance."
+    },
+    {
+      "car_id": "jeep-grand-cherokee-srt8-2012",
+      "brand": "Jeep",
+      "model": "Grand Cherokee SRT8",
+      "year": 2012,
+      "description_en": "The Grand Cherokee SRT8 is a performance SUV with a large naturally aspirated V8. It combines a spacious SUV body and everyday comfort with strong acceleration and a noticeably sportier suspension setup."
+    },
+    {
+      "car_id": "koenigsegg-ccxr-edition-2009",
+      "brand": "Koenigsegg",
+      "model": "CCXR Edition",
+      "year": 2009,
+      "description_en": "The CCXR Edition is a rare Swedish hypercar with a supercharged V8 adapted to run on E85 fuel. Its lightweight construction and output of over 1,000 horsepower place it among the most extreme cars of its era."
+    },
+    {
+      "car_id": "lamborghini-countach-lp5000-qv-1988",
+      "brand": "Lamborghini",
+      "model": "Countach LP5000 QV",
+      "year": 1988,
+      "description_en": "The Countach is one of the icons of Italian supercars from the 1980s. Its angular bodywork, distinctive doors and high-revving V12 made it a symbol of bold, futuristic design."
+    },
+    {
+      "car_id": "lamborghini-diablo-sv-1997",
+      "brand": "Lamborghini",
+      "model": "Diablo SV",
+      "year": 1997,
+      "description_en": "The Diablo SV is a more performance-focused version of the classic V12 Lamborghini. Rear-wheel drive and aggressive styling give it the raw character typical of 1990s supercars."
+    },
+    {
+      "car_id": "lamborghini-reventon-roadster-2009",
+      "brand": "Lamborghini",
+      "model": "Reventón Roadster",
+      "year": 2009,
+      "description_en": "The Reventón Roadster stands out with angular bodywork inspired by fighter aircraft. Its naturally aspirated V12 and open cockpit combine spectacular looks with brutal performance."
+    },
+    {
+      "car_id": "lamborghini-gallardo-lp570-4-superleggera-2011",
+      "brand": "Lamborghini",
+      "model": "Gallardo LP570-4 Superleggera",
+      "year": 2011,
+      "description_en": "The Gallardo Superleggera is a lighter, more track-focused version of the Gallardo. All-wheel drive, a high-revving V10 and reduced weight deliver quick responses and strong acceleration."
+    },
+    {
+      "car_id": "lamborghini-murcielago-lp-670-4-sv-2010",
+      "brand": "Lamborghini",
+      "model": "Murciélago LP 670-4 SV",
+      "year": 2010,
+      "description_en": "The Murciélago LP 670-4 SV is an extreme, lightweight version of Lamborghini's flagship V12 model. All-wheel drive, extra power and aggressive aerodynamics underline its track-focused ambitions."
+    },
+    {
+      "car_id": "lamborghini-aventador-lp700-4-2012",
+      "brand": "Lamborghini",
+      "model": "Aventador LP700-4",
+      "year": 2012,
+      "description_en": "The Aventador LP700-4 introduced a modern carbon-fibre structure and a new naturally aspirated V12. All-wheel drive and futuristic bodywork make it a striking Lamborghini flagship."
+    },
+    {
+      "car_id": "land-rover-range-rover-supercharged-2012",
+      "brand": "Land Rover",
+      "model": "Range Rover Supercharged",
+      "year": 2012,
+      "description_en": "The Range Rover Supercharged combines a luxurious interior and off-road capability with a supercharged V8. It is a large, comfortable SUV that can accelerate with surprising urgency."
+    },
+    {
+      "car_id": "lexus-is-f-2009",
+      "brand": "Lexus",
+      "model": "IS F",
+      "year": 2009,
+      "description_en": "The IS F is a Lexus sports saloon with a naturally aspirated V8 and rear-wheel drive. It combines Japanese build quality and comfort with the performance and soundtrack that set it apart from ordinary saloons."
+    },
+    {
+      "car_id": "lexus-lfa-2010",
+      "brand": "Lexus",
+      "model": "LFA",
+      "year": 2010,
+      "description_en": "The LFA is a limited-production Lexus supercar with a high-revving V10 and lightweight carbon-fibre construction. It is renowned for its extraordinary engine sound, precise handling and meticulous engineering."
+    },
+    {
+      "car_id": "lotus-exige-cup-240-2006",
+      "brand": "Lotus",
+      "model": "Exige Cup 240",
+      "year": 2006,
+      "description_en": "The Exige Cup 240 is a small, very lightweight sports car with a racing focus. A mid-mounted engine, direct steering and minimal weight put handling ahead of comfort."
+    },
+    {
+      "car_id": "maserati-granturismo-s-2010",
+      "brand": "Maserati",
+      "model": "GranTurismo S",
+      "year": 2010,
+      "description_en": "The GranTurismo S is an elegant Italian grand tourer powered by a naturally aspirated V8. It combines engine sound and sporting performance with long-distance comfort and Maserati's distinctive styling."
+    },
+    {
+      "car_id": "mazda-mx-5-miata-1994",
+      "brand": "Mazda",
+      "model": "MX-5 Miata",
+      "year": 1994,
+      "description_en": "The first-generation MX-5 is a lightweight rear-wheel-drive roadster built for pure driving enjoyment. Its low weight, simple construction and agile chassis mean it does not need huge power to be fun."
+    },
+    {
+      "car_id": "mclaren-mp4-12c-2011",
+      "brand": "McLaren",
+      "model": "MP4-12C",
+      "year": 2011,
+      "description_en": "The MP4-12C was McLaren's modern return to road-going supercars. Its lightweight construction, mid-mounted twin-turbo V8 and advanced chassis deliver impressive performance."
+    },
+    {
+      "car_id": "mercedes-benz-ml-63-amg-2009",
+      "brand": "Mercedes-Benz",
+      "model": "ML 63 AMG",
+      "year": 2009,
+      "description_en": "The ML 63 AMG is a luxury SUV powered by an AMG naturally aspirated V8. It combines a commanding driving position and practicality with rapid acceleration and the distinctive sound of a large engine."
+    },
+    {
+      "car_id": "mercedes-benz-s-65-amg-2012",
+      "brand": "Mercedes-Benz",
+      "model": "S 65 AMG",
+      "year": 2012,
+      "description_en": "The S 65 AMG is a luxury saloon with a hand-built, twin-turbocharged V12. Its character centres on enormous torque, a quiet cabin and effortless acceleration without sacrificing comfort."
+    },
+    {
+      "car_id": "mercedes-benz-sl-65-amg-black-series-2009",
+      "brand": "Mercedes-Benz",
+      "model": "SL 65 AMG Black Series",
+      "year": 2009,
+      "description_en": "The SL 65 AMG Black Series is a radical, limited-production version of the SL with a mighty twin-turbo V12. Wider bodywork, aggressive aerodynamics and performance-focused tuning set it apart from the luxury roadster."
+    },
+    {
+      "car_id": "mercedes-benz-c-63-amg-black-series-2012",
+      "brand": "Mercedes-Benz",
+      "model": "C 63 AMG Black Series",
+      "year": 2012,
+      "description_en": "The C 63 AMG Black Series is a track-oriented version of AMG's compact coupé, powered by a naturally aspirated V8. Its widened body, powerful brakes and sharper chassis give it a no-compromise character."
+    },
+    {
+      "car_id": "mini-cooper-s-2011",
+      "brand": "MINI",
+      "model": "Cooper S",
+      "year": 2011,
+      "description_en": "The Cooper S combines MINI's compact dimensions with a supercharged engine and nimble handling. Its short wheelbase and quick responses make it well suited to spirited driving on winding roads."
+    },
+    {
+      "car_id": "nissan-gt-r-black-edition-2012",
+      "brand": "Nissan",
+      "model": "GT-R Black Edition",
+      "year": 2012,
+      "description_en": "The GT-R Black Edition is a technologically advanced coupé with a twin-turbocharged V6 and all-wheel drive. Its effective traction and fast powertrain help it put substantial power down on the road."
+    },
+    {
+      "car_id": "pagani-zonda-r-2010",
+      "brand": "Pagani",
+      "model": "Zonda R",
+      "year": 2010,
+      "description_en": "The Zonda R is a track-only hypercar that was not designed for ordinary public-road use. Lightweight construction, a naturally aspirated V12 and extensive aerodynamics put lap times above everything else."
+    },
+    {
+      "car_id": "pontiac-firebird-trans-am-1977",
+      "brand": "Pontiac",
+      "model": "Firebird Trans Am",
+      "year": 1977,
+      "description_en": "The 1977 Firebird Trans Am is a classic American muscle car with a distinctive front end and long bonnet. Its large V8 and bold styling made it a recognisable symbol of its era."
+    },
+    {
+      "car_id": "ruf-rgt-8-2011",
+      "brand": "RUF",
+      "model": "RGT-8",
+      "year": 2011,
+      "description_en": "The RGT-8 is an unusual RUF model based on Porsche 911 architecture but fitted with a naturally aspirated V8 developed by RUF. It combines the familiar 911 silhouette with an unconventional powertrain and strong, linear power delivery."
+    },
+    {
+      "car_id": "saleen-s7-2004",
+      "brand": "Saleen",
+      "model": "S7",
+      "year": 2004,
+      "description_en": "The S7 is a hand-built American supercar with a mid-mounted V8. Its low weight, aerodynamic bodywork and, in later versions, forced induction give it performance worthy of an exotic supercar."
+    },
+    {
+      "car_id": "scion-fr-s-2013",
+      "brand": "Scion",
+      "model": "FR-S",
+      "year": 2013,
+      "description_en": "The FR-S is a lightweight rear-wheel-drive coupé developed around balance and handling. Its naturally aspirated boxer engine and low driving position encourage smooth, precise driving."
+    },
+    {
+      "car_id": "toyota-supra-rz-1998",
+      "brand": "Toyota",
+      "model": "Supra RZ",
+      "year": 1998,
+      "description_en": "The A80-generation Supra RZ became an icon thanks to its turbocharged 2JZ-GTE inline-six and huge tuning potential. Its long bonnet, rear-wheel drive and strong engineering foundation make it a legend among Japanese sports cars."
+    },
+    {
+      "car_id": "tvr-sagaris-2005",
+      "brand": "TVR",
+      "model": "Sagaris",
+      "year": 2005,
+      "description_en": "The Sagaris is a lightweight, uncompromising British coupé with a naturally aspirated straight-six engine. Its distinctive body details and direct handling emphasise a raw, analogue driving experience."
+    },
+    {
+      "car_id": "viper-srt-viper-gts-2013",
+      "brand": "Viper",
+      "model": "SRT Viper GTS",
+      "year": 2013,
+      "description_en": "The SRT Viper GTS is an American sports coupé with a huge naturally aspirated V10. Rear-wheel drive, a wide stance and abundant torque demand respect but deliver an intense, mechanical driving experience."
+    },
+    {
+      "car_id": "viper-srt10-acr-x-2010",
+      "brand": "Viper",
+      "model": "SRT10 ACR-X",
+      "year": 2010,
+      "description_en": "The ACR-X is a track-focused Viper variant built for racing, with an emphasis on aerodynamics, grip and reduced weight. Its powerful V10 and uncompromising setup make it a car designed primarily for circuit use."
+    }
+  ]
+}
