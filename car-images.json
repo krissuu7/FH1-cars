@@ -7,7 +7,7 @@
     "horizon": 1
   },
   "Aston Martin|V12 Zagato Villa d'Este|2011": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Aston_Martin_V12_Zagato_Villa_d'Este.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/8/8d/FH2_Aston_Martin_V12_Zagato_Villa_d%27Este.png/revision/latest?cb=20260923211530",
     "file": "File:FH2_Aston_Martin_V12_Zagato_Villa_d'Este.png",
     "page": "https://forza.fandom.com/wiki/Aston_Martin_V12_Zagato_%28Villa_d%27Este%29",
@@ -21,7 +21,7 @@
     "horizon": 1
   },
   "Audi|TT RS Coupé|2010": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Audi_TT_RS_Coupe.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/2/2f/FH2_Audi_TT_RS_Coupe.png/revision/latest?cb=20261024120204",
     "file": "File:FH2_Audi_TT_RS_Coupe.png",
     "page": "https://forza.fandom.com/wiki/Audi_TT_RS_Coup%C3%A9_%282010%29",
@@ -35,7 +35,7 @@
     "horizon": 1
   },
   "Bentley|Continental GT|2012": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Bentley_Continental_GT_Convertible.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/9/9b/FH5_Bentley_Continental_GT_Convertible.png/revision/latest?cb=20240228011550",
     "file": "File:FH5_Bentley_Continental_GT_Convertible.png",
     "page": "https://forza.fandom.com/wiki/Bentley_Continental_GT_%282012%29",
@@ -56,7 +56,7 @@
     "horizon": 1
   },
   "Chevrolet|Corvette Stingray 427|1967": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Chevrolet_Corvette_Stingray_427.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/6/64/FH5_Chevrolet_Corvette_Stingray_427.png/revision/latest?cb=20250707034008",
     "file": "File:FH5_Chevrolet_Corvette_Stingray_427.png",
     "page": "https://forza.fandom.com/wiki/Chevrolet_Corvette_Stingray_427",
@@ -77,14 +77,14 @@
     "horizon": 1
   },
   "Dodge|Charger SRT-8|2012": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Dodge_Charger_SRT8_2012.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e1/FH2_Dodge_Charger_SRT8_2012.png/revision/latest?cb=20260923211043",
     "file": "File:FH2_Dodge_Charger_SRT8_2012.png",
     "page": "https://forza.fandom.com/wiki/Dodge_Charger_SRT8_%282012%29",
     "horizon": 2
   },
   "Dodge|Challenger SRT-8 392|2012": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Dodge_Challenger_SRT8_392.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/9/90/FH2_Dodge_Challenger_SRT8_392.png/revision/latest?cb=20260923211952",
     "file": "File:FH2_Dodge_Challenger_SRT8_392.png",
     "page": "https://forza.fandom.com/wiki/Dodge_Challenger_SRT8_%282012%29",
@@ -98,7 +98,7 @@
     "horizon": 1
   },
   "Ferrari|F40|1987": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Ferrari_F40.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e6/FH5_Ferrari_F40.png/revision/latest?cb=20250710022218",
     "file": "File:FH5_Ferrari_F40.png",
     "page": "https://forza.fandom.com/wiki/Ferrari_F40",
@@ -112,7 +112,7 @@
     "horizon": 1
   },
   "Ferrari|430 Scuderia|2007": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Ferrari_430_Scuderia.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/3/31/FH5_Ferrari_430_Scuderia.png/revision/latest?cb=20250710040418",
     "file": "File:FH5_Ferrari_430_Scuderia.png",
     "page": "https://forza.fandom.com/wiki/Ferrari_430_Scuderia",
@@ -140,7 +140,7 @@
     "horizon": 1
   },
   "Ford|Shelby GT500|2013": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Ford_Mustang_Shelby_GT500_2013.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/4/45/FH2_Ford_Mustang_Shelby_GT500_2013.png/revision/latest?cb=20260904044452",
     "file": "File:FH2_Ford_Mustang_Shelby_GT500_2013.png",
     "page": "https://forza.fandom.com/wiki/Ford_Shelby_GT500_%282013%29",
@@ -154,7 +154,7 @@
     "horizon": 1
   },
   "Jaguar|XKR-S|2012": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH3_Jaguar_XKR-S_GT.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/5/51/FH3_Jaguar_XKR-S_GT.png/revision/latest?cb=20260908214557",
     "file": "File:FH3_Jaguar_XKR-S_GT.png",
     "page": "https://forza.fandom.com/wiki/Jaguar_XKR-S_%282012%29",
@@ -175,14 +175,14 @@
     "horizon": 1
   },
   "Lamborghini|Gallardo LP570-4 Superleggera|2011": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Lamborghini_Gallardo_LP_570-4_Superleggera_Small.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/7/7d/FH5_Lamborghini_Gallardo_LP_570-4_Superleggera_Small.png/revision/latest?cb=20251012194233",
     "file": "File:FH5_Lamborghini_Gallardo_LP_570-4_Superleggera_Small.png",
     "page": "https://forza.fandom.com/wiki/Lamborghini_Gallardo_LP_570-4_Superleggera",
     "horizon": 5
   },
   "Lamborghini|Murciélago LP 670-4 SV|2010": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Lamborghini_Murciélago_LP_670-4_SV_Small.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/2/2a/FH5_Lamborghini_Murci%C3%A9lago_LP_670-4_SV_Small.png/revision/latest?cb=20211118002500",
     "file": "File:FH5_Lamborghini_Murciélago_LP_670-4_SV_Small.png",
     "page": "https://forza.fandom.com/wiki/Lamborghini_Murci%C3%A9lago_LP_670-4_SV",
@@ -196,7 +196,7 @@
     "horizon": 1
   },
   "Land Rover|Range Rover Supercharged|2012": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Land_Rover_Range_Rover_Supercharged.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/a/ad/FH2_Land_Rover_Range_Rover_Supercharged.png/revision/latest?cb=20261015222611",
     "file": "File:FH2_Land_Rover_Range_Rover_Supercharged.png",
     "page": "https://forza.fandom.com/wiki/Land_Rover_Range_Rover_Supercharged_%282012%29",
@@ -210,7 +210,7 @@
     "horizon": 1
   },
   "Maserati|GranTurismo S|2010": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH5_Maserati_GranTurismo_S_Small.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/f/f6/FH5_Maserati_GranTurismo_S_Small.png/revision/latest?cb=20240709202033",
     "file": "File:FH5_Maserati_GranTurismo_S_Small.png",
     "page": "https://forza.fandom.com/wiki/Maserati_GranTurismo_S",
@@ -224,7 +224,7 @@
     "horizon": 1
   },
   "Mercedes-Benz|SL 65 AMG Black Series|2009": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH3_Mercedes-BenzSL65AMGBlackSeries.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/7/7e/FH3_Mercedes-BenzSL65AMGBlackSeries.png/revision/latest?cb=20161022054111",
     "file": "File:FH3_Mercedes-BenzSL65AMGBlackSeries.png",
     "page": "https://forza.fandom.com/wiki/Mercedes-Benz_SL_65_AMG_Black_Series",
@@ -238,7 +238,7 @@
     "horizon": 1
   },
   "MINI|Cooper S|2011": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_MINI_Cooper_S_1965.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/8/83/FH2_MINI_Cooper_S_1965.png/revision/latest?cb=20260904044455",
     "file": "File:FH2_MINI_Cooper_S_1965.png",
     "page": "https://forza.fandom.com/wiki/MINI_Cooper_S_%282011%29",
@@ -259,7 +259,7 @@
     "horizon": 1
   },
   "Pontiac|Firebird Trans Am|1977": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_Pontiac_Firebird_Trans_Am_SD-455.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/8/84/FH2_Pontiac_Firebird_Trans_Am_SD-455.png/revision/latest?cb=20260924210228",
     "file": "File:FH2_Pontiac_Firebird_Trans_Am_SD-455.png",
     "page": "https://forza.fandom.com/wiki/Pontiac_Firebird_Trans_Am_%281977%29",
@@ -287,7 +287,7 @@
     "horizon": 1
   },
   "Viper|SRT Viper GTS|2013": {
-    "src": "assets/cars/latest",
+    "src": "assets/cars/FH2_SRT_Viper_GTS.png",
     "source": "https://static.wikia.nocookie.net/forzamotorsport/images/c/ca/FH2_SRT_Viper_GTS.png/revision/latest?cb=20261022200715",
     "file": "File:FH2_SRT_Viper_GTS.png",
     "page": "https://forza.fandom.com/wiki/Dodge_SRT_Viper_GTS",
