@@ -3,10 +3,11 @@ const DESCRIPTION_URLS = { en: 'fhcars_descriptions_en.json', pl: 'fhcars_descri
 const STORAGE_KEY = 'fh1-garage-purchases';
 const IMAGE_DATA_URL = 'car-images.json';
 const translations = {
-  en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPowerAsc:'Power: low to high', sortPowerDesc:'Power: high to low', sortTorqueAsc:'Torque: low to high', sortTorqueDesc:'Torque: high to low', sortWeightAsc:'Weight: low to high', sortWeightDesc:'Weight: high to low', sortYearAsc:'Year: old to new', sortYearDesc:'Year: new to old', power:'POWER', torque:'TORQUE', weight:'WEIGHT', engine:'ENGINE', filters:'FILTERS', clearFilters:'Clear filters', brand:'MAKE', allMakes:'All makes', powerRange:'POWER (HP)', torqueRange:'TORQUE (LB-FT)', weightRange:'WEIGHT (LBS)', engineRange:'ENGINE (L)', learnMore:'LEARN MORE', close:'CLOSE', description:'DESCRIPTION', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
-  pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPowerAsc:'Moc: rosnąco', sortPowerDesc:'Moc: malejąco', sortTorqueAsc:'Moment: rosnąco', sortTorqueDesc:'Moment: malejąco', sortWeightAsc:'Waga: rosnąco', sortWeightDesc:'Waga: malejąco', sortYearAsc:'Rok: najstarsze', sortYearDesc:'Rok: najnowsze', power:'MOC', torque:'MOMENT', weight:'WAGA', engine:'SILNIK', filters:'FILTRY', clearFilters:'Wyczyść filtry', brand:'MARKA', allMakes:'Wszystkie marki', powerRange:'MOC (KM)', torqueRange:'MOMENT (LB-FT)', weightRange:'WAGA (LBS)', engineRange:'SILNIK (L)', learnMore:'WIĘCEJ INFORMACJI', close:'ZAMKNIJ', description:'OPIS', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
+  en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPowerAsc:'Power: low to high', sortPowerDesc:'Power: high to low', sortTorqueAsc:'Torque: low to high', sortTorqueDesc:'Torque: high to low', sortWeightAsc:'Weight: low to high', sortWeightDesc:'Weight: high to low', sortYearAsc:'Year: old to new', sortYearDesc:'Year: new to old', power:'POWER', torque:'TORQUE', weight:'WEIGHT', engine:'ENGINE', filters:'FILTERS', clearFilters:'Clear all', brand:'MAKE', allMakes:'All makes', powerRange:'POWER', torqueRange:'TORQUE', weightRange:'WEIGHT', engineRange:'ENGINE SIZE', filterAny:'Any', modelCount:'cars', learnMore:'LEARN MORE', close:'CLOSE', description:'DESCRIPTION', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
+  pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPowerAsc:'Moc: rosnąco', sortPowerDesc:'Moc: malejąco', sortTorqueAsc:'Moment: rosnąco', sortTorqueDesc:'Moment: malejąco', sortWeightAsc:'Waga: rosnąco', sortWeightDesc:'Waga: malejąco', sortYearAsc:'Rok: najstarsze', sortYearDesc:'Rok: najnowsze', power:'MOC', torque:'MOMENT', weight:'WAGA', engine:'SILNIK', filters:'FILTRY', clearFilters:'Wyczyść wszystko', brand:'MARKA', allMakes:'Wszystkie marki', powerRange:'MOC', torqueRange:'MOMENT', weightRange:'WAGA', engineRange:'POJEMNOŚĆ', filterAny:'Dowolna', modelCount:'aut', learnMore:'WIĘCEJ INFORMACJI', close:'ZAMKNIJ', description:'OPIS', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
 };
 let cars = [], descriptions = {}, carImages = {}, activeDetailsId = '', language = localStorage.getItem('fh1-language') || 'en', activeTab = 'shop';
+const selectedBrands = new Set(), selectedRanges = { power:null, torque:null, weight:null, engine:null };
 let purchases = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
 const $ = s => document.querySelector(s);
 const identity = car => `${car.brand}|${car.model}|${car.year}`;
@@ -19,8 +20,8 @@ async function load() {
     const descData = await descResponse.json();
     cars = database.cars;
     carImages = await imageResponse.json();
-    if ($('#brand-filter').options.length === 1) $('#brand-filter').insertAdjacentHTML('beforeend', [...new Set(cars.map(car => car.brand))].sort((a,b) => a.localeCompare(b)).map(brand => `<option value="${brand}">${brand}</option>`).join(''));
     descriptions = Object.fromEntries(descData.cars.map(d => [`${d.brand}|${d.model}|${d.year}`, d[`description_${language}`]]));
+    buildFilterButtons();
     render();
   } catch (error) { $('#car-grid').innerHTML = `<p class="empty">Unable to load the vehicle database.</p>`; console.error(error); }
 }
@@ -31,21 +32,50 @@ function translatePage() {
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { el.placeholder = t[el.dataset.i18nPlaceholder]; });
   $('#language-toggle').textContent = language === 'en' ? 'PL' : 'EN';
   $('#theme-toggle').setAttribute('aria-label', language === 'pl' ? (document.documentElement.dataset.theme === 'dark' ? 'Włącz jasny motyw' : 'Włącz ciemny motyw') : (document.documentElement.dataset.theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'));
-  [...$('#brand-filter').options].forEach(option => { if (!option.value) option.textContent = t.allMakes; });
-  document.querySelectorAll('.range-filters input').forEach(input => { input.placeholder = language === 'pl' ? (input.id.endsWith('min') ? 'Od' : 'Do') : (input.id.endsWith('min') ? 'Min' : 'Max'); });
+}
+const rangeFields = {
+  power: { key:'power_hp', title:'powerRange', unit:'HP' },
+  torque: { key:'torque_lb_ft', title:'torqueRange', unit:'LB-FT' },
+  weight: { key:'weight_lbs', title:'weightRange', unit:'LBS' },
+  engine: { key:'engine_liters', title:'engineRange', unit:'L' }
+};
+function quantileRanges(field) {
+  const values = cars.map(car => car[rangeFields[field].key]).filter(Number.isFinite).sort((a,b) => a-b);
+  if (!values.length) return [];
+  const bins = Math.min(5, values.length);
+  return Array.from({length:bins}, (_,i) => {
+    const start = Math.floor(i*values.length/bins), end = Math.floor((i+1)*values.length/bins)-1;
+    return { min:values[start], max:values[end], count:end-start+1 };
+  });
+}
+function sameRange(a,b) { return Boolean(a&&b&&a.min===b.min&&a.max===b.max); }
+function formatRange(value, field) {
+  const decimals = field === 'engine' ? 1 : 0;
+  return new Intl.NumberFormat(language === 'pl' ? 'pl-PL' : 'en-US', {maximumFractionDigits:decimals}).format(value);
+}
+function buildFilterButtons() {
+  const t = translations[language];
+  const expandedKey = $('#filter-sections').querySelector('.filter-section.expanded')?.dataset.section || 'brand';
+  const brands = [...new Set(cars.map(car => car.brand))].sort((a,b) => a.localeCompare(b));
+  const brandButtons = brands.map(brand => `<button class="filter-choice ${selectedBrands.has(brand)?'selected':''}" type="button" data-brand="${brand}">${brand}</button>`).join('');
+  const sections = [{key:'brand',title:t.brand,choices:brandButtons}];
+  for (const [field,meta] of Object.entries(rangeFields)) {
+    const choices = quantileRanges(field).map((range,index) => `<button class="filter-choice range-choice ${sameRange(selectedRanges[field],range)? 'selected':''}" type="button" data-range="${field}" data-index="${index}"><span>${formatRange(range.min,field)}–${formatRange(range.max,field)} ${meta.unit}</span><small>${range.count} ${t.modelCount}</small></button>`).join('');
+    sections.push({key:field,title:t[meta.title],choices});
+  }
+  $('#filter-sections').innerHTML = sections.map(section => { const expanded=section.key===expandedKey; return `<section class="filter-section ${expanded?'expanded':''}" data-section="${section.key}"><button class="filter-toggle" type="button" aria-expanded="${expanded}"><span>${section.title}</span><span class="filter-summary">${section.key==='brand' ? (selectedBrands.size||'') : (selectedRanges[section.key] ? '1' : '')}</span><span class="filter-chevron">⌄</span></button><div class="filter-options">${section.key!=='brand'?`<button class="filter-choice any-choice ${selectedRanges[section.key]===null?'selected':''}" type="button" data-any="${section.key}">${t.filterAny}</button>`:''}${section.choices}</div></section>`; }).join('');
 }
 function render() {
   translatePage();
   const query = $('#search').value.toLowerCase().trim();
   const sort = $('#sort').value;
-  const brand = $('#brand-filter').value;
   let visible = cars.filter(car => (activeTab === 'shop' ? !purchases.has(identity(car)) : purchases.has(identity(car))))
     .filter(car => `${car.brand} ${car.model} ${car.year}`.toLowerCase().includes(query))
-    .filter(car => !brand || car.brand === brand)
+    .filter(car => selectedBrands.size === 0 || selectedBrands.has(car.brand))
     .filter(car => ['power','torque','weight','engine'].every(field => {
       const value = car[{power:'power_hp',torque:'torque_lb_ft',weight:'weight_lbs',engine:'engine_liters'}[field]];
-      const min = $('#'+field+'-min').value, max = $('#'+field+'-max').value;
-      return (min === '' || (value != null && value >= Number(min))) && (max === '' || (value != null && value <= Number(max)));
+      const range = selectedRanges[field];
+      return !range || (value != null && value >= range.min && value <= range.max);
     }));
   const sortValues = { priceAsc:['price_cr',1], priceDesc:['price_cr',-1], powerAsc:['power_hp',1], powerDesc:['power_hp',-1], torqueAsc:['torque_lb_ft',1], torqueDesc:['torque_lb_ft',-1], weightAsc:['weight_lbs',1], weightDesc:['weight_lbs',-1], yearAsc:['year',1], yearDesc:['year',-1] };
   if (sortValues[sort]) { const [field, direction] = sortValues[sort]; visible.sort((a,b) => ((a[field] ?? Infinity) - (b[field] ?? Infinity)) * direction); }
@@ -69,6 +99,10 @@ document.addEventListener('click', e => {
   const tab = e.target.closest('.tab'); if (tab) { activeTab = tab.dataset.tab; document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab)); render(); }
   const button = e.target.closest('.buy'); if (button) { const id = decodeURIComponent(button.dataset.id); purchases.has(id) ? purchases.delete(id) : purchases.add(id); localStorage.setItem(STORAGE_KEY, JSON.stringify([...purchases])); render(); if ($('#car-dialog').open) showDetails(id); }
   const detailsButton = e.target.closest('[data-details]'); if (detailsButton) showDetails(decodeURIComponent(detailsButton.dataset.details));
+  const toggle = e.target.closest('.filter-toggle'); if (toggle) { const section=toggle.closest('.filter-section'); section.classList.toggle('expanded'); toggle.setAttribute('aria-expanded',section.classList.contains('expanded')); }
+  const brandButton = e.target.closest('[data-brand]'); if (brandButton) { const brand=brandButton.dataset.brand; selectedBrands.has(brand)?selectedBrands.delete(brand):selectedBrands.add(brand); buildFilterButtons(); render(); }
+  const rangeButton = e.target.closest('[data-range]'); if (rangeButton) { const field=rangeButton.dataset.range, ranges=quantileRanges(field), range=ranges[Number(rangeButton.dataset.index)]; selectedRanges[field]=sameRange(selectedRanges[field],range)?null:range; buildFilterButtons(); render(); }
+  const anyButton = e.target.closest('[data-any]'); if (anyButton) { selectedRanges[anyButton.dataset.any]=null; buildFilterButtons(); render(); }
 });
 function showDetails(id) {
   const car = cars.find(item => identity(item) === id); if (!car) return;
@@ -80,9 +114,7 @@ $('#car-dialog').addEventListener('click', event => { if (event.target === $('#c
 document.querySelector('.dialog-close').addEventListener('click', () => $('#car-dialog').close());
 $('#car-dialog').addEventListener('close', () => render());
 $('#search').addEventListener('input', render); $('#sort').addEventListener('change', render);
-$('#brand-filter').addEventListener('change', render);
-document.querySelectorAll('.range-filters input').forEach(input => input.addEventListener('input', render));
-$('#clear-filters').addEventListener('click', () => { $('#brand-filter').value = ''; document.querySelectorAll('.range-filters input').forEach(input => input.value = ''); $('#search').value = ''; render(); });
+$('#clear-filters').addEventListener('click', () => { selectedBrands.clear(); Object.keys(selectedRanges).forEach(field=>selectedRanges[field]=null); $('#search').value = ''; buildFilterButtons(); render(); });
 $('#language-toggle').addEventListener('click', () => { language = language === 'en' ? 'pl' : 'en'; localStorage.setItem('fh1-language', language); load(); });
 const savedTheme = localStorage.getItem('fh1-theme') || 'light';
 document.documentElement.dataset.theme = savedTheme;

@@ -7,26 +7,38 @@ html[data-theme=dark] .hero{background:linear-gradient(110deg,#0e1729 0%,#0e1729
 html[data-theme=dark] .description{color:#c2ccdc}
 html[data-theme=dark] .tab:not(.active){color:#aeb9ce}
 html[data-theme=dark] .stat span,html[data-theme=dark] .progress-label,html[data-theme=dark] .spec span,html[data-theme=dark] .owned,html[data-theme=dark] footer{color:#b5bfd2}
-html[data-theme=dark] .search input,html[data-theme=dark] select,html[data-theme=dark] .range-filters input{color:var(--ink)}
-html[data-theme=dark] .search input::placeholder,html[data-theme=dark] .range-filters input::placeholder{color:#9ba8be}
+html[data-theme=dark] .search input,html[data-theme=dark] select{color:var(--ink)}
+html[data-theme=dark] .search input::placeholder{color:#9ba8be}
 html[data-theme=dark] .progress{background:#33415b}
 html[data-theme=dark] .noise{opacity:.018}
 .theme-button svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.filter-panel{margin:0 max(8vw,30px) 28px;padding:17px 18px;background:var(--card);border:1px solid var(--line);color:var(--ink)}
-.filter-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font:700 12px 'Barlow Condensed';letter-spacing:.16em}
-.filter-heading button{border:0;background:none;color:var(--orange);font:600 11px Inter;cursor:pointer}
-.brand-filter,.range-filters label{display:flex;flex-direction:column;gap:7px;color:var(--muted);font:700 9px 'Barlow Condensed';letter-spacing:.13em}
-.brand-filter{max-width:230px;margin-bottom:13px}
-.brand-filter select{width:100%;height:36px}
-.range-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.range-filters label>div{display:flex;gap:7px}
-.range-filters input{width:50%;height:34px;min-width:0;padding:0 9px;border:1px solid var(--line);background:var(--cream);color:var(--ink);font:500 12px Inter}
+.collection-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;padding:0 max(8vw,30px) 60px;align-items:start}
+.filter-panel{position:sticky;top:18px;padding:15px;background:var(--card);border:1px solid var(--line);color:var(--ink);box-shadow:0 12px 30px #1118270b;z-index:1}
+.filter-heading{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px;font:700 12px 'Barlow Condensed';letter-spacing:.16em}
+.filter-heading button{border:0;background:none;color:var(--orange);font:600 10px Inter;cursor:pointer}
+.filter-sections{display:flex;flex-direction:column;gap:7px}
+.filter-section{border:1px solid var(--line);background:var(--cream)}
+.filter-toggle{width:100%;min-height:40px;display:flex;align-items:center;gap:8px;padding:0 10px;border:0;background:transparent;color:var(--ink);font:700 12px 'Barlow Condensed';letter-spacing:.12em;text-align:left;cursor:pointer}
+.filter-summary{margin-left:auto;color:var(--orange);font:700 10px Inter}
+.filter-chevron{font-size:15px;color:var(--muted);transition:transform .18s ease}
+.filter-section.expanded .filter-chevron{transform:rotate(180deg)}
+.filter-options{display:none;max-height:260px;overflow:auto;padding:0 8px 9px;gap:5px;flex-wrap:wrap}
+.filter-section.expanded .filter-options{display:flex}
+.filter-choice{border:1px solid var(--line);border-radius:2px;padding:7px 9px;background:var(--card);color:var(--ink);font:600 10px Inter;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.filter-choice:hover{border-color:var(--orange)}
+.filter-choice.selected{border-color:var(--orange);background:#ff70431a;color:var(--orange)}
+.range-choice{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left}
+.range-choice small{color:var(--muted);font-size:9px}
+.any-choice{width:100%;text-align:left}
+.collection-results{min-width:0}
+.collection-results .car-grid{padding:0;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
 .make{font-size:16px;line-height:1.1;letter-spacing:.09em;color:var(--ink);text-transform:uppercase}
 .model{font-size:22px;line-height:1.05;letter-spacing:.015em;text-transform:none}
 .card-head{align-items:flex-start}
 .card-head>div{min-width:0}
 .year{display:block}
-@media(max-width:700px){.filter-panel{margin:0 24px 22px}.range-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-filter{max-width:none}.make{font-size:15px}.model{font-size:22px}}
+@media(max-width:900px){.collection-layout{grid-template-columns:190px minmax(0,1fr);gap:15px;padding-left:24px;padding-right:24px}.collection-results .car-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}
+@media(max-width:700px){.collection-layout{grid-template-columns:1fr;padding:0 24px 45px}.filter-panel{position:relative;top:auto;padding:12px}.filter-sections{display:flex;flex-direction:column;gap:5px}.filter-heading{margin-bottom:9px}.filter-options{max-height:190px}.collection-results .car-grid{grid-template-columns:1fr}.make{font-size:15px}.model{font-size:22px}}
 
 .car-image-frame{width:100%;aspect-ratio:1000/563;display:flex;align-items:center;justify-content:center;overflow:hidden;margin:14px 0;background:transparent}
 .car-image{display:block;width:100%;height:100%;object-fit:contain}
