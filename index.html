@@ -34,6 +34,12 @@
       <aside class="filter-panel" aria-label="Vehicle filters">
         <div class="filter-heading"><strong data-i18n="filters">FILTERS</strong><button id="clear-filters" type="button" data-i18n="clearFilters">Clear filters</button></div>
         <div id="filter-sections" class="filter-sections"></div>
+        <section class="budget-filter">
+          <label for="price-min" data-i18n="priceRange">PRICE RANGE (CR)</label>
+          <div class="price-range-inputs"><input id="price-min" type="number" min="0" step="1000" data-i18n-placeholder="priceMin" placeholder="From"><input id="price-max" type="number" min="0" step="1000" data-i18n-placeholder="priceMax" placeholder="To"></div>
+          <label for="budget-input" data-i18n="budgetLabel">WHAT CAN I AFFORD?</label>
+          <input id="budget-input" class="budget-input" type="number" min="0" step="1000" data-i18n-placeholder="budgetPlaceholder" placeholder="Enter your credits">
+        </section>
       </aside>
       <div class="collection-results"><section id="car-grid" class="car-grid" aria-live="polite"></section><div id="empty-state" class="empty" hidden><div>✦</div><h2 data-i18n="emptyTitle">No cars in this lane</h2><p data-i18n="emptyText">Try a different search or move a few rides into your garage.</p></div></div>
     </div>
