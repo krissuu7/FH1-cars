@@ -1,389 +1,246 @@
 {
   "Alfa Romeo|8C Competizione|2007": {
-    "src": "assets/cars/FH1_Alfa_Romeo_8C_Competizione.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/0/01/FH1_Alfa_Romeo_8C_Competizione.png/revision/latest?cb=20261022170319",
-    "file": "File:FH1 Alfa Romeo 8C Competizione.png",
-    "page": "https://forza.fandom.com/wiki/Alfa_Romeo_8C_Competizione",
-    "horizon": 1,
-    "alpha": true
+    "src": "assets/cars/FH_AlfaRomeo_8C-Competizione.webp",
+    "file": "FH_AlfaRomeo_8C-Competizione.webp"
+  },
+  "Aston Martin|V12 Zagato Villa d'Este|2011": {
+    "src": "assets/cars/FH_Aston_V12Zagato.webp",
+    "file": "FH_Aston_V12Zagato.webp"
   },
   "Aston Martin|One-77|2010": {
-    "src": "assets/cars/FH1_Aston_Martin_One-77.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e6/FH1_Aston_Martin_One-77.png/revision/latest?cb=20260924211858",
-    "file": "File:FH1 Aston Martin One-77.png",
-    "page": "https://forza.fandom.com/wiki/Aston_Martin_One-77",
-    "horizon": 1,
-    "alpha": true
+    "src": "assets/cars/FH_Aston_One77.webp",
+    "file": "FH_Aston_One77.webp"
   },
   "Audi|TT RS Coupé|2010": {
-    "src": "assets/cars/FH2_Audi_TT_RS_Coupe.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/2/2f/FH2_Audi_TT_RS_Coupe.png/revision/latest?cb=20261024120204",
-    "file": "File:FH2_Audi_TT_RS_Coupe.png",
-    "page": "https://forza.fandom.com/wiki/Audi_TT_RS_Coup%C3%A9_%282010%29",
-    "horizon": 2,
-    "alpha": true
+    "src": "assets/cars/FH_Audi_TT_RS.webp",
+    "file": "FH_Audi_TT_RS.webp"
   },
   "Audi|RS 4|2006": {
-    "src": "assets/cars/FH1_Audi_RS_4.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/1/19/FH1_Audi_RS_4.png/revision/latest?cb=20261022042543",
-    "file": "File:FH1 Audi RS 4.png",
-    "page": "https://forza.fandom.com/wiki/Audi_RS_4",
-    "horizon": 1,
-    "alpha": true
-  },
-  "BMW|M3|2008": {
-    "src": "assets/cars/FH1_BMW_M3_2008.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/3/37/FH1_BMW_M3_2008.png/revision/latest?cb=20260904044443",
-    "file": "File:FH1 BMW M3 2008.png",
-    "page": "https://forza.fandom.com/wiki/BMW_M3_%282008%29",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Bugatti|Veyron Super Sport|2011": {
-    "src": "assets/cars/FH1_Bugatti_Veyron_Super_Sport.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/b/b2/FH1_Bugatti_Veyron_Super_Sport.png/revision/latest?cb=20260925012657",
-    "file": "File:FH1 Bugatti Veyron Super Sport.png",
-    "page": "https://forza.fandom.com/wiki/Bugatti_Veyron_Super_Sport",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Chevrolet|Camaro ZL1|2012": {
-    "src": "assets/cars/FH1_Chevrolet_Camaro_ZL1_2012.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/0/02/FH1_Chevrolet_Camaro_ZL1_2012.png/revision/latest?cb=20260924230042",
-    "file": "File:FH1 Chevrolet Camaro ZL1 2012.png",
-    "page": "https://forza.fandom.com/wiki/Chevrolet_Camaro_ZL1_%282012%29",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Chevrolet|Corvette ZR1|2009": {
-    "src": "assets/cars/FH1_Chevrolet_Corvette_ZR1_2009.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/9/95/FH1_Chevrolet_Corvette_ZR1_2009.png/revision/latest?cb=20261022200114",
-    "file": "File:FH1 Chevrolet Corvette ZR1 2009.png",
-    "page": "https://forza.fandom.com/wiki/Chevrolet_Corvette_ZR1_%282009%29",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Dodge|Charger SRT-8|2012": {
-    "src": "assets/cars/FH2_Dodge_Charger_SRT8_2012.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e1/FH2_Dodge_Charger_SRT8_2012.png/revision/latest?cb=20260923211043",
-    "file": "File:FH2_Dodge_Charger_SRT8_2012.png",
-    "page": "https://forza.fandom.com/wiki/Dodge_Charger_SRT8_%282012%29",
-    "horizon": 2,
-    "alpha": true
-  },
-  "Dodge|Challenger SRT-8 392|2012": {
-    "src": "assets/cars/FH2_Dodge_Challenger_SRT8_392.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/9/90/FH2_Dodge_Challenger_SRT8_392.png/revision/latest?cb=20260923211952",
-    "file": "File:FH2_Dodge_Challenger_SRT8_392.png",
-    "page": "https://forza.fandom.com/wiki/Dodge_Challenger_SRT8_%282012%29",
-    "horizon": 2,
-    "alpha": true
-  },
-  "Ferrari|California|2009": {
-    "src": "assets/cars/FH1_Ferrari_California.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/6/60/FH1_Ferrari_California.png/revision/latest?cb=20260903042204",
-    "file": "File:FH1 Ferrari California.png",
-    "page": "https://forza.fandom.com/wiki/Ferrari_California",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Ferrari|Enzo Ferrari|2002": {
-    "src": "assets/cars/FH1_Ferrari_Enzo_Ferrari.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/c/c5/FH1_Ferrari_Enzo_Ferrari.png/revision/latest?cb=20261022201513",
-    "file": "File:FH1 Ferrari Enzo Ferrari.png",
-    "page": "https://forza.fandom.com/wiki/Ferrari_Enzo_Ferrari",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Ford|GT|2005": {
-    "src": "assets/cars/FH1_Ford_GT_2005.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/4/40/FH1_Ford_GT_2005.png/revision/latest?cb=20261022182731",
-    "file": "File:FH1 Ford GT 2005.png",
-    "page": "https://forza.fandom.com/wiki/Ford_GT_%282005%29",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Ford|Shelby GT500|2013": {
-    "src": "assets/cars/FH2_Ford_Mustang_Shelby_GT500_2013.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/4/45/FH2_Ford_Mustang_Shelby_GT500_2013.png/revision/latest?cb=20260904044452",
-    "file": "File:FH2_Ford_Mustang_Shelby_GT500_2013.png",
-    "page": "https://forza.fandom.com/wiki/Ford_Shelby_GT500_%282013%29",
-    "horizon": 2,
-    "alpha": true
-  },
-  "Hennessey|Venom GT|2012": {
-    "src": "assets/cars/FH1_Hennessey_Venom_GT.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/a/a2/FH1_Hennessey_Venom_GT.png/revision/latest?cb=20260924193131",
-    "file": "File:FH1 Hennessey Venom GT.png",
-    "page": "https://forza.fandom.com/wiki/Hennessey_Venom_GT",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Jaguar|XKR-S|2012": {
-    "src": "assets/cars/FH3_Jaguar_XKR-S_GT.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/5/51/FH3_Jaguar_XKR-S_GT.png/revision/latest?cb=20260908214557",
-    "file": "File:FH3_Jaguar_XKR-S_GT.png",
-    "page": "https://forza.fandom.com/wiki/Jaguar_XKR-S_%282012%29",
-    "horizon": 3,
-    "alpha": true
-  },
-  "Lamborghini|Countach LP5000 QV|1988": {
-    "src": "assets/cars/FH1_Lamborghini_Countach_LP5000_QV.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/c/c0/FH1_Lamborghini_Countach_LP5000_QV.png/revision/latest?cb=20261022172914",
-    "file": "File:FH1 Lamborghini Countach LP5000 QV.png",
-    "page": "https://forza.fandom.com/wiki/Lamborghini_Countach_LP5000_QV",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Lamborghini|Diablo SV|1997": {
-    "src": "assets/cars/FH1_Lamborghini_Diablo_SV.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/0/07/FH1_Lamborghini_Diablo_SV.png/revision/latest?cb=20261022232143",
-    "file": "File:FH1 Lamborghini Diablo SV.png",
-    "page": "https://forza.fandom.com/wiki/Lamborghini_Diablo_SV",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Lamborghini|Gallardo LP570-4 Superleggera|2011": {
-    "src": "assets/cars/FH5_Lamborghini_Gallardo_LP_570-4_Superleggera_Small.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/7/7d/FH5_Lamborghini_Gallardo_LP_570-4_Superleggera_Small.png/revision/latest?cb=20251012194233",
-    "file": "File:FH5_Lamborghini_Gallardo_LP_570-4_Superleggera_Small.png",
-    "page": "https://forza.fandom.com/wiki/Lamborghini_Gallardo_LP_570-4_Superleggera",
-    "horizon": 5,
-    "alpha": true
-  },
-  "Lamborghini|Murciélago LP 670-4 SV|2010": {
-    "src": "assets/cars/FH5_Lamborghini_Murciélago_LP_670-4_SV_Small.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/2/2a/FH5_Lamborghini_Murci%C3%A9lago_LP_670-4_SV_Small.png/revision/latest?cb=20211118002500",
-    "file": "File:FH5_Lamborghini_Murciélago_LP_670-4_SV_Small.png",
-    "page": "https://forza.fandom.com/wiki/Lamborghini_Murci%C3%A9lago_LP_670-4_SV",
-    "horizon": 5,
-    "alpha": true
-  },
-  "Lamborghini|Aventador LP700-4|2012": {
-    "src": "assets/cars/FH1_Lamborghini_Aventador_LP700-4.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/0/0b/FH1_Lamborghini_Aventador_LP700-4.png/revision/latest?cb=20260925015115",
-    "file": "File:FH1 Lamborghini Aventador LP700-4.png",
-    "page": "https://forza.fandom.com/wiki/Lamborghini_Aventador_LP700-4",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Land Rover|Range Rover Supercharged|2012": {
-    "src": "assets/cars/FH2_Land_Rover_Range_Rover_Supercharged.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/a/ad/FH2_Land_Rover_Range_Rover_Supercharged.png/revision/latest?cb=20261015222611",
-    "file": "File:FH2_Land_Rover_Range_Rover_Supercharged.png",
-    "page": "https://forza.fandom.com/wiki/Land_Rover_Range_Rover_Supercharged_%282012%29",
-    "horizon": 2,
-    "alpha": true
-  },
-  "Lexus|LFA|2010": {
-    "src": "assets/cars/FH1_Lexus_LFA.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/3/38/FH1_Lexus_LFA.png/revision/latest?cb=20260924212514",
-    "file": "File:FH1 Lexus LFA.png",
-    "page": "https://forza.fandom.com/wiki/Lexus_LFA",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Maserati|GranTurismo S|2010": {
-    "src": "assets/cars/FH_Maserati_GranTurismo_S.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/2/28/FH_Maserati_GranTurismo_S.jpg/revision/latest?cb=20171006192704",
-    "file": "File:FH Maserati GranTurismo S.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Mazda|MX-5 Miata|1994": {
-    "src": "assets/cars/FH1_Mazda_MX-5_Miata_1994.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/4/48/FH1_Mazda_MX-5_Miata_1994.png/revision/latest?cb=20260904033730",
-    "file": "File:FH1 Mazda MX-5 Miata 1994.png",
-    "page": "https://forza.fandom.com/wiki/Mazda_MX-5_Miata_%281994%29",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Mercedes-Benz|SL 65 AMG Black Series|2009": {
-    "src": "assets/cars/FH5_Mercedes-Benz_SL_65_AMG_Black_Series.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/b/bf/FH5_Mercedes-Benz_SL_65_AMG_Black_Series.png/revision/latest?cb=20250716233602",
-    "file": "File:FH5 Mercedes-Benz SL 65 AMG Black Series.png",
-    "horizon": 5,
-    "alpha": true
-  },
-  "Mercedes-Benz|C 63 AMG Black Series|2012": {
-    "src": "assets/cars/FH1_Mercedes-Benz_C_63_AMG_Coupe_Black_Series.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/b/b1/FH1_Mercedes-Benz_C_63_AMG_Coupe_Black_Series.png/revision/latest?cb=20261022180417",
-    "file": "File:FH1 Mercedes-Benz C 63 AMG Coupe Black Series.png",
-    "page": "https://forza.fandom.com/wiki/Mercedes-Benz_C_63_AMG_Coup%C3%A9_Black_Series",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Nissan|GT-R Black Edition|2012": {
-    "src": "assets/cars/FH1_Nissan_GT-R_Black_Edition_R35.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/f/fe/FH1_Nissan_GT-R_Black_Edition_R35.png/revision/latest?cb=20260904033732",
-    "file": "File:FH1 Nissan GT-R Black Edition R35.png",
-    "page": "https://forza.fandom.com/wiki/Nissan_GT-R_Black_Edition_%28R35%29",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Pagani|Zonda R|2010": {
-    "src": "assets/cars/FH1_Pagani_Zonda_R.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/8/86/FH1_Pagani_Zonda_R.png/revision/latest?cb=20261022203624",
-    "file": "File:FH1 Pagani Zonda R.png",
-    "page": "https://forza.fandom.com/wiki/Pagani_Zonda_R",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Saleen|S7|2004": {
-    "src": "assets/cars/FH1_Saleen_S7.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/6/63/FH1_Saleen_S7.png/revision/latest?cb=20261006024806",
-    "file": "File:FH1 Saleen S7.png",
-    "page": "https://forza.fandom.com/wiki/Saleen_S7",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Toyota|Supra RZ|1998": {
-    "src": "assets/cars/FH1_Toyota_Supra_RZ.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/3/32/FH1_Toyota_Supra_RZ.png/revision/latest?cb=20260904033733",
-    "file": "File:FH1 Toyota Supra RZ.png",
-    "page": "https://forza.fandom.com/wiki/Toyota_Supra_RZ",
-    "horizon": 1,
-    "alpha": true
-  },
-  "TVR|Sagaris|2005": {
-    "src": "assets/cars/FH1_TVR_Sagaris.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/f/fa/FH1_TVR_Sagaris.png/revision/latest?cb=20260924193131",
-    "file": "File:FH1 TVR Sagaris.png",
-    "page": "https://forza.fandom.com/wiki/TVR_Sagaris",
-    "horizon": 1,
-    "alpha": true
-  },
-  "Viper|SRT Viper GTS|2013": {
-    "src": "assets/cars/FH_Viper_GTS.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/a/a9/FH_Viper_GTS.jpg/revision/latest?cb=20240917020833",
-    "file": "File:FH Viper GTS.jpg",
-    "horizon": 1,
-    "alpha": false
+    "src": "assets/cars/FH_Audi_RS4.webp",
+    "file": "FH_Audi_RS4.webp"
   },
   "Audi|R8 GT|2011": {
-    "src": "assets/cars/FH_Audi_R8_GT.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/c/cd/FH_Audi_R8_GT.jpg/revision/latest?cb=20170825131807",
-    "file": "File:FH Audi R8 GT.jpg",
-    "horizon": 1,
-    "alpha": false
+    "src": "assets/cars/FH_Audi_R8_GT.webp",
+    "file": "FH_Audi_R8_GT.webp"
   },
   "Bentley|Continental GT|2012": {
-    "src": "assets/cars/FH_Bentley_Continental.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/4/4f/FH_Bentley_Continental.jpg/revision/latest?cb=20170719165244",
-    "file": "File:FH Bentley Continental.jpg",
-    "horizon": 1,
-    "alpha": false
+    "src": "assets/cars/FH_Bentley_Continental.webp",
+    "file": "FH_Bentley_Continental.webp"
+  },
+  "BMW|M3|2008": {
+    "src": "assets/cars/FH_BMW_M3_E92.webp",
+    "file": "FH_BMW_M3_E92.webp"
+  },
+  "Bugatti|Veyron Super Sport|2011": {
+    "src": "assets/cars/FH_Bugatti_VeyronSS.webp",
+    "file": "FH_Bugatti_VeyronSS.webp"
+  },
+  "Cadillac|CTS-V Coupé|2011": {
+    "src": "assets/cars/FH_Cadillac_CTS-V_11.webp",
+    "file": "FH_Cadillac_CTS-V_11.webp"
   },
   "Chevrolet|Camaro SS Coupé|1969": {
-    "src": "assets/cars/FH_Chevy_Camaro_1969.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/2/28/FH_Chevy_Camaro_1969.jpg/revision/latest?cb=20190115095518",
-    "file": "File:FH Chevy Camaro 1969.jpg",
-    "horizon": 1,
-    "alpha": false
+    "src": "assets/cars/FH_Chevy_Camaro_1969.webp",
+    "file": "FH_Chevy_Camaro_1969.webp"
+  },
+  "Chevrolet|Corvette Stingray 427|1967": {
+    "src": "assets/cars/FH_Chevy_Corvette_67.webp",
+    "file": "FH_Chevy_Corvette_67.webp"
   },
   "Chevrolet|Corvette Grand Sport Convertible|2010": {
-    "src": "assets/cars/FH_Chevrolet_Corvette_10.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/8/88/FH_Chevrolet_Corvette_10.jpg/revision/latest?cb=20171116145311",
-    "file": "File:FH Chevrolet Corvette 10.jpg",
-    "horizon": 1,
-    "alpha": false
+    "src": "assets/cars/FH_Chevrolet_Corvette_10.webp",
+    "file": "FH_Chevrolet_Corvette_10.webp"
+  },
+  "Chevrolet|Camaro ZL1|2012": {
+    "src": "assets/cars/FH_Chevy_Camaro_Z28_12.webp",
+    "file": "FH_Chevy_Camaro_Z28_12.webp"
+  },
+  "Chevrolet|Corvette ZR1|2009": {
+    "src": "assets/cars/FH_Chevrolet_Corvette_ZR1_09.webp",
+    "file": "FH_Chevrolet_Corvette_ZR1_09.webp"
+  },
+  "Dodge|Charger SRT-8|2012": {
+    "src": "assets/cars/FH_Dodge_Charger_12.webp",
+    "file": "FH_Dodge_Charger_12.webp"
+  },
+  "Dodge|Challenger SRT-8 392|2012": {
+    "src": "assets/cars/FH_Dodge_Challenger_12.webp",
+    "file": "FH_Dodge_Challenger_12.webp"
+  },
+  "Ferrari|California|2009": {
+    "src": "assets/cars/FH_Ferrari_California.webp",
+    "file": "FH_Ferrari_California.webp"
+  },
+  "Ferrari|F40|1987": {
+    "src": "assets/cars/FH_Ferrari_F40.webp",
+    "file": "FH_Ferrari_F40.webp"
+  },
+  "Ferrari|F50|1995": {
+    "src": "assets/cars/FH_Ferrari_F50.webp",
+    "file": "FH_Ferrari_F50.webp"
   },
   "Ferrari|458 Spider|2011": {
-    "src": "assets/cars/FH_Ferrari_458Spider.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/5/52/FH_Ferrari_458Spider.jpg/revision/latest?cb=20170815193330",
-    "file": "File:FH Ferrari 458Spider.jpg",
-    "horizon": 1,
-    "alpha": false
+    "src": "assets/cars/FH_Ferrari_458Spider.webp",
+    "file": "FH_Ferrari_458Spider.webp"
   },
-  "Honda|Integra Type R|2002": {
-    "src": "assets/cars/FH_Honda_Integra_02.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e0/FH_Honda_Integra_02.jpg/revision/latest?cb=20180730180701",
-    "file": "File:FH Honda Integra 02.jpg",
-    "horizon": 1,
-    "alpha": false
+  "Ferrari|430 Scuderia|2007": {
+    "src": "assets/cars/FH_Ferrari_430Scuderia.webp",
+    "file": "FH_Ferrari_430Scuderia.webp"
   },
-  "Jeep|Grand Cherokee SRT8|2012": {
-    "src": "assets/cars/FH_Jeep_Grand_Cherokee_SRT8.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/1/1c/FH_Jeep_Grand_Cherokee_SRT8.jpg/revision/latest?cb=20181209225048",
-    "file": "File:FH Jeep Grand Cherokee SRT8.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Koenigsegg|CCXR Edition|2009": {
-    "src": "assets/cars/FH_Koenigsegg_CCXR_Edition.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/1/1c/FH_Koenigsegg_CCXR_Edition.jpg/revision/latest?cb=20171118100114",
-    "file": "File:FH Koenigsegg CCXR Edition.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Lexus|IS F|2009": {
-    "src": "assets/cars/FH_Lexus_IS_F.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e2/FH_Lexus_IS_F.jpg/revision/latest?cb=20180510084932",
-    "file": "File:FH Lexus IS F.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Lotus|Exige Cup 240|2006": {
-    "src": "assets/cars/FH_Lotus_Exige_Cup.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/8/84/FH_Lotus_Exige_Cup.jpg/revision/latest?cb=20180909165037",
-    "file": "File:FH Lotus Exige Cup.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Mercedes-Benz|ML 63 AMG|2009": {
-    "src": "assets/cars/FH_Mercedes_ML63.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/3/35/FH_Mercedes_ML63.jpg/revision/latest?cb=20180221194214",
-    "file": "File:FH Mercedes ML63.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Mercedes-Benz|S 65 AMG|2012": {
-    "src": "assets/cars/FH_Mercedes_S65.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/f/fe/FH_Mercedes_S65.jpg/revision/latest?cb=20180221205527",
-    "file": "File:FH Mercedes S65.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "RUF|RGT-8|2011": {
-    "src": "assets/cars/FH_RUF_RGT-8.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/e/e2/FH_RUF_RGT-8.jpg/revision/latest?cb=20180311160859",
-    "file": "File:FH RUF RGT-8.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Scion|FR-S|2013": {
-    "src": "assets/cars/FH_Scion_FRS.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/6/6a/FH_Scion_FRS.jpg/revision/latest?cb=20161218040709",
-    "file": "File:FH Scion FRS.jpg",
-    "horizon": 1,
-    "alpha": false
-  },
-  "Viper|SRT10 ACR-X|2010": {
-    "src": "assets/cars/FH_Viper_SRT10.jpg",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/d/d0/FH_Viper_SRT10.jpg/revision/latest?cb=20181209155612",
-    "file": "File:FH Viper SRT10.jpg",
-    "horizon": 1,
-    "alpha": false
+  "Ferrari|Enzo Ferrari|2002": {
+    "src": "assets/cars/FH_Ferrari_EnzoFerrari.webp",
+    "file": "FH_Ferrari_EnzoFerrari.webp"
   },
   "Ford|F-150 SVT Raptor|2011": {
-    "src": "assets/cars/FH5_Ford_F-150_SVT_Raptor.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/c/c3/FH5_Ford_F-150_SVT_Raptor.png/revision/latest?cb=20250710193756",
-    "file": "File:FH5 Ford F-150 SVT Raptor.png",
-    "horizon": 5,
-    "alpha": true
+    "src": "assets/cars/FH_Ford_Raptor_11.webp",
+    "file": "FH_Ford_Raptor_11.webp"
+  },
+  "Ford|GT|2005": {
+    "src": "assets/cars/FH_2005_Ford_GT.webp",
+    "file": "FH_2005_Ford_GT.webp"
+  },
+  "Ford|Shelby GT500|2013": {
+    "src": "assets/cars/FH_Ford_Mustang_13.webp",
+    "file": "FH_Ford_Mustang_13.webp"
+  },
+  "Hennessey|Venom GT|2012": {
+    "src": "assets/cars/FH_Hennessey_VenomGT.webp",
+    "file": "FH_Hennessey_VenomGT.webp"
+  },
+  "Honda|Integra Type R|2002": {
+    "src": "assets/cars/FH_Honda_Integra_02.webp",
+    "file": "FH_Honda_Integra_02.webp"
+  },
+  "Hyundai|Genesis Coupe 3.8 Track|2013": {
+    "src": "assets/cars/FH_Hyundai_Genesis.webp",
+    "file": "FH_Hyundai_Genesis.webp"
+  },
+  "Infiniti|IPL G Coupe|2012": {
+    "src": "assets/cars/FH_Infiniti_IPL_G.webp",
+    "file": "FH_Infiniti_IPL_G.webp"
+  },
+  "Jaguar|XKR-S|2012": {
+    "src": "assets/cars/FH_Jaguar_XKR-S.webp",
+    "file": "FH_Jaguar_XKR-S.webp"
+  },
+  "Jeep|Grand Cherokee SRT8|2012": {
+    "src": "assets/cars/FH_Jeep_Grand_Cherokee_SRT8.webp",
+    "file": "FH_Jeep_Grand_Cherokee_SRT8.webp"
+  },
+  "Koenigsegg|CCXR Edition|2009": {
+    "src": "assets/cars/FH_Koenigsegg_CCXR_Edition.webp",
+    "file": "FH_Koenigsegg_CCXR_Edition.webp"
+  },
+  "Lamborghini|Countach LP5000 QV|1988": {
+    "src": "assets/cars/FH_Lamborghini_Countach.webp",
+    "file": "FH_Lamborghini_Countach.webp"
+  },
+  "Lamborghini|Diablo SV|1997": {
+    "src": "assets/cars/FH_Lamborghini_Diablo.webp",
+    "file": "FH_Lamborghini_Diablo.webp"
+  },
+  "Lamborghini|Reventón Roadster|2009": {
+    "src": "assets/cars/FH_Lamborghini_ReventonRoadster.webp",
+    "file": "FH_Lamborghini_ReventonRoadster.webp"
+  },
+  "Lamborghini|Gallardo LP570-4 Superleggera|2011": {
+    "src": "assets/cars/FH_Lamborghini_GallardoLP570-4.webp",
+    "file": "FH_Lamborghini_GallardoLP570-4.webp"
+  },
+  "Lamborghini|Murciélago LP 670-4 SV|2010": {
+    "src": "assets/cars/FH_Lamborghini_Murcielago_LP670.webp",
+    "file": "FH_Lamborghini_Murcielago_LP670.webp"
+  },
+  "Lamborghini|Aventador LP700-4|2012": {
+    "src": "assets/cars/FH_Lamborghini_Aventador_12.webp",
+    "file": "FH_Lamborghini_Aventador_12.webp"
+  },
+  "Land Rover|Range Rover Supercharged|2012": {
+    "src": "assets/cars/FH_LR_Range_Rover_12.webp",
+    "file": "FH_LR_Range_Rover_12.webp"
+  },
+  "Lexus|IS F|2009": {
+    "src": "assets/cars/FH_Lexus_IS_F.webp",
+    "file": "FH_Lexus_IS_F.webp"
+  },
+  "Lexus|LFA|2010": {
+    "src": "assets/cars/FH_Lexus_LFA.webp",
+    "file": "FH_Lexus_LFA.webp"
+  },
+  "Lotus|Exige Cup 240|2006": {
+    "src": "assets/cars/FH_Lotus_Exige_Cup.webp",
+    "file": "FH_Lotus_Exige_Cup.webp"
+  },
+  "Maserati|GranTurismo S|2010": {
+    "src": "assets/cars/FH_Maserati_GranTurismo_S.webp",
+    "file": "FH_Maserati_GranTurismo_S.webp"
+  },
+  "Mazda|MX-5 Miata|1994": {
+    "src": "assets/cars/FH_Mazda_MX-5_Miata.webp",
+    "file": "FH_Mazda_MX-5_Miata.webp"
+  },
+  "McLaren|MP4-12C|2011": {
+    "src": "assets/cars/FH_McLaren_12C.webp",
+    "file": "FH_McLaren_12C.webp"
+  },
+  "Mercedes-Benz|ML 63 AMG|2009": {
+    "src": "assets/cars/FH_Mercedes_ML63.webp",
+    "file": "FH_Mercedes_ML63.webp"
+  },
+  "Mercedes-Benz|S 65 AMG|2012": {
+    "src": "assets/cars/FH_Mercedes_S65.webp",
+    "file": "FH_Mercedes_S65.webp"
+  },
+  "Mercedes-Benz|SL 65 AMG Black Series|2009": {
+    "src": "assets/cars/FH_M-B_SL65.webp",
+    "file": "FH_M-B_SL65.webp"
+  },
+  "Mercedes-Benz|C 63 AMG Black Series|2012": {
+    "src": "assets/cars/FH_Mercedes_C63AMG_BlackSeries.webp",
+    "file": "FH_Mercedes_C63AMG_BlackSeries.webp"
   },
   "MINI|Cooper S|2011": {
-    "src": "assets/cars/FH5_MINI_Cooper_S.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/b/b8/FH5_MINI_Cooper_S.png/revision/latest?cb=20250717042848",
-    "file": "File:FH5 MINI Cooper S.png",
-    "horizon": 5,
-    "alpha": true
+    "src": "assets/cars/FH_Mini_Cooper_S_2011.webp",
+    "file": "FH_Mini_Cooper_S_2011.webp"
+  },
+  "Nissan|GT-R Black Edition|2012": {
+    "src": "assets/cars/FH_Nissan_GTRBlackEdition.webp",
+    "file": "FH_Nissan_GTRBlackEdition.webp"
+  },
+  "Pagani|Zonda R|2010": {
+    "src": "assets/cars/FH_Pagani_Zonda_R.webp",
+    "file": "FH_Pagani_Zonda_R.webp"
   },
   "Pontiac|Firebird Trans Am|1977": {
-    "src": "assets/cars/FH5_Pontiac_Firebird_Trans_Am_1977.png",
-    "source": "https://static.wikia.nocookie.net/forzamotorsport/images/5/59/FH5_Pontiac_Firebird_Trans_Am_1977.png/revision/latest?cb=20250720022502",
-    "file": "File:FH5 Pontiac Firebird Trans Am 1977.png",
-    "horizon": 5,
-    "alpha": true
+    "src": "assets/cars/FH_Pontiac_Firebird_77.webp",
+    "file": "FH_Pontiac_Firebird_77.webp"
+  },
+  "RUF|RGT-8|2011": {
+    "src": "assets/cars/FH_RUF_RGT-8.webp",
+    "file": "FH_RUF_RGT-8.webp"
+  },
+  "Saleen|S7|2004": {
+    "src": "assets/cars/FH_Saleen_S7.webp",
+    "file": "FH_Saleen_S7.webp"
+  },
+  "Scion|FR-S|2013": {
+    "src": "assets/cars/FH_Scion_FRS.webp",
+    "file": "FH_Scion_FRS.webp"
+  },
+  "Toyota|Supra RZ|1998": {
+    "src": "assets/cars/FH_Toyota_SupraRZ.webp",
+    "file": "FH_Toyota_SupraRZ.webp"
+  },
+  "TVR|Sagaris|2005": {
+    "src": "assets/cars/FH_TVR_Sagaris.webp",
+    "file": "FH_TVR_Sagaris.webp"
+  },
+  "Viper|SRT Viper GTS|2013": {
+    "src": "assets/cars/FH_Viper_GTS.webp",
+    "file": "FH_Viper_GTS.webp"
+  },
+  "Viper|SRT10 ACR-X|2010": {
+    "src": "assets/cars/FH_Viper_SRT10.webp",
+    "file": "FH_Viper_SRT10.webp"
   }
 }

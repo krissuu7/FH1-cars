@@ -14,4 +14,4 @@ Open `http://localhost:8000`.
 
 Purchase state is stored only in the browser under `localStorage`; the source JSON files remain unchanged.
 
-Car artwork is stored locally in `assets/cars/` and mapped in `car-images.json`. Images use the earliest verified Horizon artwork available for the matching model. Transparent renders are identified in the manifest and shown on a custom garage backdrop; in-game screenshots retain their original scene background. Image and vehicle-page sources are recorded in the manifest. Vehicles without a verified matching image use a placeholder.
+Car artwork is stored in `assets/cars/` and mapped to vehicle records in `car-images.json`. Source images are horizontal WebP files.
