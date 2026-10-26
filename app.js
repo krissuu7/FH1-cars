@@ -3,8 +3,8 @@ const DESCRIPTION_URLS = { en: 'fhcars_descriptions_en.json', pl: 'fhcars_descri
 const STORAGE_KEY = 'fh1-garage-purchases';
 const IMAGE_DATA_URL = 'car-images.json';
 const translations = {
-  en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPowerAsc:'Power: low to high', sortPowerDesc:'Power: high to low', sortTorqueAsc:'Torque: low to high', sortTorqueDesc:'Torque: high to low', sortWeightAsc:'Weight: low to high', sortWeightDesc:'Weight: high to low', sortYearAsc:'Year: old to new', sortYearDesc:'Year: new to old', power:'POWER', torque:'TORQUE', weight:'WEIGHT', engine:'ENGINE', filters:'FILTERS', clearFilters:'Clear all', brand:'MAKE', allMakes:'All makes', powerRange:'POWER', torqueRange:'TORQUE', weightRange:'WEIGHT', engineRange:'ENGINE SIZE', filterAny:'Any', modelCount:'cars', learnMore:'LEARN MORE', close:'CLOSE', description:'DESCRIPTION', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
-  pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPowerAsc:'Moc: rosnąco', sortPowerDesc:'Moc: malejąco', sortTorqueAsc:'Moment: rosnąco', sortTorqueDesc:'Moment: malejąco', sortWeightAsc:'Waga: rosnąco', sortWeightDesc:'Waga: malejąco', sortYearAsc:'Rok: najstarsze', sortYearDesc:'Rok: najnowsze', power:'MOC', torque:'MOMENT', weight:'WAGA', engine:'SILNIK', filters:'FILTRY', clearFilters:'Wyczyść wszystko', brand:'MARKA', allMakes:'Wszystkie marki', powerRange:'MOC', torqueRange:'MOMENT', weightRange:'WAGA', engineRange:'POJEMNOŚĆ', filterAny:'Dowolna', modelCount:'aut', learnMore:'WIĘCEJ INFORMACJI', close:'ZAMKNIJ', description:'OPIS', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
+  en: { eyebrow:'THE OPEN ROAD AWAITS', heroText:'Your personal Forza Horizon 1 collection. Pick your next ride, track your garage, and keep the festival moving.', collection:'COLLECTION', garageValue:'GARAGE VALUE', completion:'COMPLETION', shop:'SHOP', garage:'GARAGE', search:'Search make or model...', sortFeatured:'Featured', sortBestValue:'Best value', sortPriceAsc:'Price: low to high', sortPriceDesc:'Price: high to low', sortPowerAsc:'Power: low to high', sortPowerDesc:'Power: high to low', sortTorqueAsc:'Torque: low to high', sortTorqueDesc:'Torque: high to low', sortWeightAsc:'Weight: low to high', sortWeightDesc:'Weight: high to low', sortYearAsc:'Year: old to new', sortYearDesc:'Year: new to old', power:'POWER', torque:'TORQUE', weight:'WEIGHT', engine:'ENGINE', filters:'FILTERS', clearFilters:'Clear all', brand:'MAKE', allMakes:'All makes', powerRange:'POWER', torqueRange:'TORQUE', weightRange:'WEIGHT', engineRange:'ENGINE SIZE', filterAny:'Any', modelCount:'cars', learnMore:'LEARN MORE', close:'CLOSE', description:'DESCRIPTION', buy:'ADD TO GARAGE', remove:'REMOVE', owned:'IN GARAGE', emptyTitle:'No cars in this lane', emptyText:'Try a different search or move a few rides into your garage.', footer:'A personal collection tracker · Forza Horizon 1' },
+  pl: { eyebrow:'OTWARTA DROGA CZEKA', heroText:'Twoja osobista kolekcja z Forza Horizon 1. Wybierz kolejny samochód, śledź garaż i ruszaj na festiwal.', collection:'KOLEKCJA', garageValue:'WARTOŚĆ GARAŻU', completion:'UKOŃCZENIE', shop:'SKLEP', garage:'GARAŻ', search:'Szukaj marki lub modelu...', sortFeatured:'Polecane', sortBestValue:'Najlepsza opłacalność', sortPriceAsc:'Cena: rosnąco', sortPriceDesc:'Cena: malejąco', sortPowerAsc:'Moc: rosnąco', sortPowerDesc:'Moc: malejąco', sortTorqueAsc:'Moment: rosnąco', sortTorqueDesc:'Moment: malejąco', sortWeightAsc:'Waga: rosnąco', sortWeightDesc:'Waga: malejąco', sortYearAsc:'Rok: najstarsze', sortYearDesc:'Rok: najnowsze', power:'MOC', torque:'MOMENT', weight:'WAGA', engine:'SILNIK', filters:'FILTRY', clearFilters:'Wyczyść wszystko', brand:'MARKA', allMakes:'Wszystkie marki', powerRange:'MOC', torqueRange:'MOMENT', weightRange:'WAGA', engineRange:'POJEMNOŚĆ', filterAny:'Dowolna', modelCount:'aut', learnMore:'WIĘCEJ INFORMACJI', close:'ZAMKNIJ', description:'OPIS', buy:'DODAJ DO GARAŻU', remove:'USUŃ', owned:'W GARAŻU', emptyTitle:'Brak samochodów w tym miejscu', emptyText:'Zmień wyszukiwanie lub przenieś samochody do garażu.', footer:'Osobisty tracker kolekcji · Forza Horizon 1' }
 };
 let cars = [], descriptions = {}, carImages = {}, activeDetailsId = '', language = localStorage.getItem('fh1-language') || 'en', activeTab = 'shop';
 const selectedBrands = new Set(), selectedRanges = { power:null, torque:null, weight:null, engine:null };
@@ -77,7 +77,26 @@ function render() {
       return !range || (value != null && value >= range.min && value <= range.max);
     }));
   const sortValues = { priceAsc:['price_cr',1], priceDesc:['price_cr',-1], powerAsc:['power_hp',1], powerDesc:['power_hp',-1], torqueAsc:['torque_lb_ft',1], torqueDesc:['torque_lb_ft',-1], weightAsc:['weight_lbs',1], weightDesc:['weight_lbs',-1], yearAsc:['year',1], yearDesc:['year',-1] };
-  if (sortValues[sort]) { const [field, direction] = sortValues[sort]; visible.sort((a,b) => ((a[field] ?? Infinity) - (b[field] ?? Infinity)) * direction); }
+  if (sort === 'bestValue') {
+    const criteria = [
+      {key:'power_hp', direction:1, value:car=>car.power_hp},
+      {key:'torque_lb_ft', direction:1, value:car=>car.torque_lb_ft},
+      {key:'weight_lbs', direction:-1, value:car=>car.weight_lbs},
+      {key:'price_cr', direction:-1, value:car=>car.price_cr},
+      {key:'powerPerLiter', direction:1, value:car=>car.engine_liters>0?car.power_hp/car.engine_liters:null}
+    ];
+    const bounds = Object.fromEntries(criteria.map(({key,value}) => {
+      const values = cars.map(value).filter(Number.isFinite);
+      return [key,{min:Math.min(...values),max:Math.max(...values)}];
+    }));
+    const score = car => criteria.reduce((total,{key,direction,value:getValue}) => {
+      const {min,max}=bounds[key], value=getValue(car);
+      if (!Number.isFinite(value) || max===min) return total;
+      const normalized=(value-min)/(max-min);
+      return total+(direction===1?normalized:1-normalized);
+    },0)/criteria.length;
+    visible.sort((a,b) => score(b)-score(a) || a.price_cr-b.price_cr);
+  } else if (sortValues[sort]) { const [field, direction] = sortValues[sort]; visible.sort((a,b) => ((a[field] ?? Infinity) - (b[field] ?? Infinity)) * direction); }
   $('#car-grid').innerHTML = visible.map((car, i) => card(car, i)).join('');
   $('#empty-state').hidden = visible.length > 0;
   $('#shop-count').textContent = cars.filter(c => !purchases.has(identity(c))).length;
